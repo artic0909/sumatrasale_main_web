@@ -48,9 +48,9 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container shadow border p-3">
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="/">
-                            <img src="{{ asset('./img/logo.png') }}" alt="Graphicode India Logo" class="me-2 nav-logo" height="32" />
-                            <span class="fw-bold fs-4 clr-bl">Graphicode</span>&nbsp;
-                            <span class="fw-bold fs-4 clr-org"> India</span>
+                            <img src="{{asset('./sumatra2.png')}}" alt="Sumatra Sales Logo" class="me-2 nav-logo" width="80" />
+                            <span class="fw-bold fs-4 clr-bl">Private</span>&nbsp;
+                            <span class="fw-bold fs-4 clr-org"> Limited</span>
                         </a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -137,18 +137,18 @@
                                 <!-- Short Intro Section -->
                                 <p class="fs-6" style="text-align: justify; opacity: 0.75">
                                     <strong>Bringing Your Ideas to Life – Unlock the Potential of
-                                        Your Vision with Graphicode India's Expert Design and
+                                        Your Vision with Sumatra Sale's Expert Marketing Strategies and
                                         Development Services!🚀🖥️</strong>
                                 </p>
 
                                 <!-- Services============================ -->
                                 <div class="infoo">
                                     <p class="fw-bold mt-5">
-                                        <span class="fs-4 service-title-text">🌏 We Provide Services</span>
+                                        <span class="fs-4 service-title-text">🚀 Marketing & Business Growth (Your Marketing Partner)</span>
                                     </p>
 
                                     <div class="card-container p-3 gap-3">
-                                        @foreach ($services as $service)
+                                        @foreach ($marketingServices as $service)
                                         <!-- card 1 -->
                                         <div class="p-4 pb-0" style="background: #cecdd891; border-radius: 15px">
                                             <div style="border-radius: 10px"
@@ -167,6 +167,203 @@
 
                                     </div>
                                 </div>
+
+
+                                <!-- Services============================ -->
+                                <div class="infoo">
+                                    <p class="fw-bold mt-5">
+                                        <span class="fs-4 service-title-text">🚀 Digital Marketing & Online Presence</span>
+                                    </p>
+
+                                    <div class="card-container p-3 gap-3">
+                                        @foreach ($DigitalServices as $service)
+                                        <!-- card 1 -->
+                                        <div class="p-4 pb-0" style="background: #cecdd891; border-radius: 15px">
+                                            <div style="border-radius: 10px"
+                                                class="img-container bg-white p-3 d-flex justify-content-center align-items-center">
+                                                <img src="{{ asset('storage/' . $service->image) }}" width="86" alt="" />
+                                            </div>
+
+                                            <div class="card-content mt-2">
+                                                <p class="fw-bold fs-6 text-center">
+                                                    {{ $service->title }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        @endforeach
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Services============================ -->
+                                <div class="infoo">
+                                    <p class="fw-bold mt-5">
+                                        <span class="fs-4 service-title-text">🚀 Website & App Development (Graphicode India)</span>
+                                    </p>
+
+                                    <div class="card-container p-3 gap-3">
+                                        @foreach ($WebsiteAppDevelopmentServices as $service)
+                                        <!-- card 1 -->
+                                        <div class="p-4 pb-0" style="background: #cecdd891; border-radius: 15px">
+                                            <div style="border-radius: 10px"
+                                                class="img-container bg-white p-3 d-flex justify-content-center align-items-center">
+                                                <img src="{{ asset('storage/' . $service->image) }}" width="86" alt="" />
+                                            </div>
+
+                                            <div class="card-content mt-2">
+                                                <p class="fw-bold fs-6 text-center">
+                                                    {{ $service->title }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        @endforeach
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Services============================ -->
+                                <div class="infoo">
+                                    <p class="fw-bold mt-5">
+                                        <span class="fs-4 service-title-text">🚀 Software Solutions (Graphicode India)</span>
+                                    </p>
+
+                                    <div class="card-container p-3 gap-3">
+                                        @foreach ($softwareServices as $service)
+                                        <!-- card 1 -->
+                                        <div class="p-4 pb-0" style="background: #cecdd891; border-radius: 15px">
+                                            <div style="border-radius: 10px"
+                                                class="img-container bg-white p-3 d-flex justify-content-center align-items-center">
+                                                <img src="{{ asset('storage/' . $service->image) }}" width="86" alt="" />
+                                            </div>
+
+                                            <div class="card-content mt-2">
+                                                <p class="fw-bold fs-6 text-center">
+                                                    {{ $service->title }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        @endforeach
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Services============================ -->
+                                <div class="infoo">
+                                    <p class="fw-bold mt-5">
+                                        <span class="fs-4 service-title-text">🚀 Educational Services (Schoolwala)</span>
+                                    </p>
+
+                                    <div class="card-container p-3 gap-3">
+                                        @foreach ($educationalServices as $service)
+                                        <!-- card 1 -->
+                                        <div class="p-4 pb-0" style="background: #cecdd891; border-radius: 15px">
+                                            <div style="border-radius: 10px"
+                                                class="img-container bg-white p-3 d-flex justify-content-center align-items-center">
+                                                <img src="{{ asset('storage/' . $service->image) }}" width="86" alt="" />
+                                            </div>
+
+                                            <div class="card-content mt-2">
+                                                <p class="fw-bold fs-6 text-center">
+                                                    {{ $service->title }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        @endforeach
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Services============================ -->
+                                <div class="infoo">
+                                    <p class="fw-bold mt-5">
+                                        <span class="fs-4 service-title-text">🚀 Creative & Design Studio</span>
+                                    </p>
+
+                                    <div class="card-container p-3 gap-3">
+                                        @foreach ($creativeDesignStudioServices as $service)
+                                        <!-- card 1 -->
+                                        <div class="p-4 pb-0" style="background: #cecdd891; border-radius: 15px">
+                                            <div style="border-radius: 10px"
+                                                class="img-container bg-white p-3 d-flex justify-content-center align-items-center">
+                                                <img src="{{ asset('storage/' . $service->image) }}" width="86" alt="" />
+                                            </div>
+
+                                            <div class="card-content mt-2">
+                                                <p class="fw-bold fs-6 text-center">
+                                                    {{ $service->title }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        @endforeach
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Services============================ -->
+                                <div class="infoo">
+                                    <p class="fw-bold mt-5">
+                                        <span class="fs-4 service-title-text">🚀 Consultancy & Business Support</span>
+                                    </p>
+
+                                    <div class="card-container p-3 gap-3">
+                                        @foreach ($consultancyBusinessSupportServices as $service)
+                                        <!-- card 1 -->
+                                        <div class="p-4 pb-0" style="background: #cecdd891; border-radius: 15px">
+                                            <div style="border-radius: 10px"
+                                                class="img-container bg-white p-3 d-flex justify-content-center align-items-center">
+                                                <img src="{{ asset('storage/' . $service->image) }}" width="86" alt="" />
+                                            </div>
+
+                                            <div class="card-content mt-2">
+                                                <p class="fw-bold fs-6 text-center">
+                                                    {{ $service->title }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        @endforeach
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Services============================ -->
+                                <div class="infoo">
+                                    <p class="fw-bold mt-5">
+                                        <span class="fs-4 service-title-text">🚀 Offline Field Services</span>
+                                    </p>
+
+                                    <div class="card-container p-3 gap-3">
+                                        @foreach ($offlineFieldServices as $service)
+                                        <!-- card 1 -->
+                                        <div class="p-4 pb-0" style="background: #cecdd891; border-radius: 15px">
+                                            <div style="border-radius: 10px"
+                                                class="img-container bg-white p-3 d-flex justify-content-center align-items-center">
+                                                <img src="{{ asset('storage/' . $service->image) }}" width="86" alt="" />
+                                            </div>
+
+                                            <div class="card-content mt-2">
+                                                <p class="fw-bold fs-6 text-center">
+                                                    {{ $service->title }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        @endforeach
+
+
+                                    </div>
+                                </div>
+
 
                                 <!-- Specialized Fields start========================================================================================== -->
                                 <section class="main-section col-12 mt-4" id="specialized">
@@ -230,7 +427,7 @@
 
                             <div class="card-content mt-2 p-3">
                                 <p class="fw-bold fs-4 text-start m-0 video-title">
-                                    👋Welcome To <span class="clr-bl">Graphicode</span>
+                                    👋Welcome To <span class="clr-bl">SSPL GROUPS</span>
                                 </p>
                                 @foreach ($videos as $video)
                                 <p class="fs-6 m-0 video-desc" style="text-align: justify">
@@ -277,11 +474,10 @@
                         <div class="row align-items-center">
                             <div class="col-6">
                                 <div class="footer-logo">
-                                    <img src="{{asset('./img/logo.png')}}" width="40" alt="" />
+                                    <img src="{{asset('./sumatra1.png')}}" width="60" alt="" />
                                     <p class="opacity-75 footer-text">
                                         <span class="clr-bl fs-5">©</span> 2025 All rights
-                                        reserved by <span class="clr-org fs-4">♥</span> Graphicode
-                                        India
+                                        reserved by <span class="clr-bl fs-4">♥</span> Sumatra Sales Private Limited
                                     </p>
                                 </div>
                             </div>
@@ -347,4 +543,4 @@
     <script src="{{asset('./js/filter.js')}}"></script>
 </body>
 
-</html> 
+</html>

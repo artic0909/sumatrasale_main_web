@@ -48,9 +48,9 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container shadow border p-3">
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="/">
-                            <img src="{{asset('./img/logo.png')}}" alt="Graphicode India Logo" class="me-2 nav-logo" height="32" />
-                            <span class="fw-bold fs-4 clr-bl">Graphicode</span>&nbsp;
-                            <span class="fw-bold fs-4 clr-org"> India</span>
+                            <img src="{{asset('./sumatra2.png')}}" alt="Sumatra Sales Logo" class="me-2 nav-logo" width="80" />
+                            <span class="fw-bold fs-4 clr-bl">Private</span>&nbsp;
+                            <span class="fw-bold fs-4 clr-org"> Limited</span>
                         </a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -116,7 +116,7 @@
 
 
 
-                
+
                 <!-- Service + Video start========================================================================================== -->
                 <div class="row service2-row">
                     <!-- Services Section Start======================================================-->
@@ -192,15 +192,13 @@
 
                             <div class="card-content mt-2 p-3">
                                 <p class="fw-bold fs-4 text-start m-0 video-title">
-                                    👋Welcome To <span class="clr-bl">Graphicode</span>
+                                    👋Welcome To <span class="clr-bl">SSPL GROUPS</span>
                                 </p>
+                               @foreach ($videos as $video)
                                 <p class="fs-6 m-0 video-desc" style="text-align: justify">
-                                    Graphicode India, established two years ago, is a trusted
-                                    provider of innovative digital solutions. Our skilled team
-                                    specializes in delivering custom software, creative design
-                                    services, and IT support, ensuring client satisfaction and
-                                    exceptional results.
+                                    {{ $video->desc }}
                                 </p>
+                                @endforeach
                             </div>
 
                             <div class="buttons video-buttons p-3 d-flex justify-content-between">
@@ -223,11 +221,10 @@
                         <div class="row align-items-center">
                             <div class="col-6">
                                 <div class="footer-logo">
-                                    <img src="./img/logo.png" width="40" alt="" />
+                                    <img src="{{asset('./sumatra1.png')}}" width="60" alt="" />
                                     <p class="opacity-75 footer-text">
                                         <span class="clr-bl fs-5">©</span> 2025 All rights
-                                        reserved by <span class="clr-org fs-4">♥</span> Graphicode
-                                        India
+                                        reserved by <span class="clr-bl fs-4">♥</span> Sumatra Sales Private Limited
                                     </p>
                                 </div>
                             </div>
@@ -236,21 +233,21 @@
                                 <div class="footer-links">
                                     <ul class="footer-ul d-flex justify-content-end align-items-center gap-3">
                                         <li>
-                                            <a href="#" style="
+                                            <a href="/privacy-policy" style="
                             text-decoration: none;
                             color: black;
                             opacity: 0.75;
                           ">Privacy <span class="hidee"> & Policy</span></a>
                                         </li>
                                         <li>
-                                            <a href="#" style="
+                                            <a href="/services" style="
                             text-decoration: none;
                             color: black;
                             opacity: 0.75;
                           ">Services</a>
                                         </li>
                                         <li>
-                                            <a href="#" style="
+                                            <a href="/contact" style="
                             text-decoration: none;
                             color: black;
                             opacity: 0.75;

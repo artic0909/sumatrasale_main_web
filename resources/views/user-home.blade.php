@@ -45,9 +45,9 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container shadow border p-3">
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="/">
-                            <img src="{{asset('./img/logo.png')}}" alt="Graphicode India Logo" class="me-2 nav-logo" height="32" />
-                            <span class="fw-bold fs-4 clr-bl">Graphicode</span>&nbsp;
-                            <span class="fw-bold fs-4 clr-org"> India</span>
+                            <img src="{{asset('./sumatra2.png')}}" alt="Sumatra Sales Logo" class="me-2 nav-logo" width="80" />
+                            <span class="fw-bold fs-4 clr-bl">Private</span>&nbsp;
+                            <span class="fw-bold fs-4 clr-org"> Limited</span>
                         </a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
@@ -155,7 +155,7 @@
                             <div class="card-content mt-2" style="padding: 16px;">
                                 @foreach($videos as $video)
                                 <p class="fw-bold fs-4 text-start m-0 video-title">
-                                    👋Welcome To <span class="clr-bl">Graphicode</span>
+                                    👋Welcome To <span class="clr-bl">SSPL GROUPS</span>
                                 </p>
                                 <p class="fs-6 m-0 video-desc" style="text-align: justify">
                                     {{ $video->desc }}
@@ -457,11 +457,10 @@
                         <div class="row align-items-center">
                             <div class="col-6">
                                 <div class="footer-logo">
-                                    <img src="{{asset('./img/logo.png')}}" width="40" alt="" />
+                                    <img src="{{asset('./sumatra1.png')}}" width="60" alt="" />
                                     <p class="opacity-75 footer-text">
                                         <span class="clr-bl fs-5">©</span> 2025 All rights
-                                        reserved by <span class="clr-org fs-4">♥</span> Graphicode
-                                        India
+                                        reserved by <span class="clr-bl fs-4">♥</span> Sumatra Sales Private Limited
                                     </p>
                                 </div>
                             </div>

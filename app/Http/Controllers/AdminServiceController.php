@@ -21,6 +21,7 @@ class AdminServiceController extends Controller
         $validated = $request->validate([
             'image' => 'image|mimes:jpeg,png,jpg,gif,webp|max:2048',
             'title' => 'string',
+            'type' => 'string',
         ]);
 
         // Handle the image upload
@@ -34,6 +35,7 @@ class AdminServiceController extends Controller
         AdminServiceModel::create([
             'image' => $filePath ?? null,
             'title' => $request->input('title'),
+            'type' => $request->input('type'),
         ]);
 
         return back()->with('success', 'Information added successfully!');
@@ -45,6 +47,7 @@ class AdminServiceController extends Controller
         $validated = $request->validate([
             'image' => 'mimes:jpeg,png,jpg,gif,webp|max:2048',
             'title' => 'string',
+            'type' => 'string',
         ]);
 
         $servicesInfo = AdminServiceModel::find($id);
@@ -64,6 +67,7 @@ class AdminServiceController extends Controller
             }
 
             $servicesInfo->title = $request->input('title');
+            $servicesInfo->type = $request->input('type');
             $servicesInfo->save();
 
             return back()->with('success', 'Information updated successfully!');

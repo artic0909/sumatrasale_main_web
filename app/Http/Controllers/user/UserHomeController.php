@@ -18,7 +18,7 @@ class UserHomeController extends Controller
 {
     public function index(){
 
-        $services = AdminServiceModel::get();
+        $services = AdminServiceModel::inRandomOrder()->paginate(9);
         $videos = AdminVideoDescModel::get();
         $projects = AdminProjectModel::get();
         $blogs = AdminBlogModel::get();

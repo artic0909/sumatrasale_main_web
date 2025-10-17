@@ -14,6 +14,7 @@
                             <tr>
                                 <th scope="col">Logo</th>
                                 <th scope="col">Title</th>
+                                <th scope="col">Type</th>
                                 <th scope="col">Edit</th>
                                 <th scope="col">Delete</th>
                             </tr>
@@ -23,6 +24,7 @@
                             <tr>
                                 <td><img class="rounded-3" width="50" height="50" src="{{ asset('storage/' . $service->image) }}" alt=""></td>
                                 <td class="text-success fw-bold" style="text-transform: capitalize;">{{ $service->title }}</td>
+                                <td class="text-success fw-bold" style="text-transform: capitalize;">{{ $service->type }}</td>
                                 <td>
                                     <a type="button" data-bs-toggle="modal" data-bs-target="#EditmModal{{$service->id}}">
                                         <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
@@ -70,6 +72,20 @@
                             <input type="text" class="form-control rounded" name="title" id="title" placeholder="Enter Services Title" required>
                         </div>
 
+                        <div class="form-group mb-3">
+                            <label for="type" class="form-label fw-bold mb-2">Service Title<span class="text-danger">*</span></label>
+                            <select name="type" id="type" class="form-control">
+                                <option value="Marketing & Business Growth">Marketing & Business Growth</option>
+                                <option value="Digital Marketing & Online Presence">Digital Marketing & Online Presence</option>
+                                <option value="Website & App Development">Website & App Development</option>
+                                <option value="Software Solutions (Graphicode India)">Software Solutions (Graphicode India)</option>
+                                <option value="Educational Services (Schoolwala)">Educational Services (Schoolwala)</option>
+                                <option value="Creative & Design Studio">Creative & Design Studio</option>
+                                <option value="Consultancy & Business Support">Consultancy & Business Support</option>
+                                <option value="Offline Field Services">Offline Field Services</option>
+                            </select>
+                        </div>
+
                         <div class="modal-footer1 d-flex align-items-center justify-end gap-3">
                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-danger2">Save changes</button>
@@ -106,6 +122,23 @@
                         <div class="form-group mb-3">
                             <label for="title" class="form-label fw-bold mb-2">Service Title<span class="text-danger">*</span></label>
                             <input type="text" class="form-control rounded" name="title" id="title" value="{{ $service->title }}">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="type" class="form-label fw-bold mb-2">Service Title<span class="text-danger">*</span></label>
+                            <select name="type" id="type" class="form-control">
+                                @if($service->type)
+                                    <option selected value="{{ $service->type }}">{{ $service->type }}</option>
+                                @endif
+                                <option value="Marketing & Business Growth">Marketing & Business Growth</option>
+                                <option value="Digital Marketing & Online Presence">Digital Marketing & Online Presence</option>
+                                <option value="Website & App Development">Website & App Development</option>
+                                <option value="Software Solutions (Graphicode India)">Software Solutions (Graphicode India)</option>
+                                <option value="Educational Services (Schoolwala)">Educational Services (Schoolwala)</option>
+                                <option value="Creative & Design Studio">Creative & Design Studio</option>
+                                <option value="Consultancy & Business Support">Consultancy & Business Support</option>
+                                <option value="Offline Field Services">Offline Field Services</option>
+                            </select>
                         </div>
 
                         <div class="modal-footer1 d-flex align-items-center justify-end gap-3">

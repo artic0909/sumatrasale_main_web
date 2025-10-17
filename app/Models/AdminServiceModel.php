@@ -12,5 +12,6 @@ class AdminServiceModel extends Model
     public $fillable = [
         'image',
         'title',
+        'type',
     ];
 }
