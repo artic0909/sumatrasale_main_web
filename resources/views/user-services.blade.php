@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services Page</title>
+    <title>Services | Sumatra Sales Private Limited</title>
 
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
