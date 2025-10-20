@@ -88,7 +88,7 @@
                                 </li>
 
                                 <li class="nav-item btn-org">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="mailto:">Let's Talk &nbsp;
+                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="mailto:sumatra.sales2424@gmail.com">Let's Talk &nbsp;
                                         <img class="nav-img hide" src="{{asset('./icon/arrow-talk.png')}}" width="15" alt="" /></a>
                                 </li>
                             </ul>
@@ -283,7 +283,7 @@
                         <div class="shadow border p-3">
                             <div class="inner-items-center">
                                 <span class="fw-bold fs-4 col-6 service-title-text">Specialized</span>
-                                <a href="/services/#specialized" class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer">
+                                <a href="/services/#specialized" class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer; text-decoration: none;">
                                     See All
                                     <img src="{{asset('./icon/arrow.png')}}" alt="" width="20" />
                                 </a>
@@ -326,10 +326,10 @@
                         <div class="shadow border p-3">
                             <div class="inner-items-center">
                                 <span class="fw-bold fs-4 col-6 service-title-text">Our Partners</span>
-                                <span class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer">
+                                <!-- <span class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer">
                                     See All
                                     <img src="{{asset('./icon/arrow.png')}}" alt="" width="20" />
-                                </span>
+                                </span> -->
                             </div>
 
                             <div class="scr" style="overflow: hidden">

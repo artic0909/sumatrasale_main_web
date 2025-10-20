@@ -17,6 +17,7 @@ use App\Http\Controllers\user\UserAboutController;
 use App\Http\Controllers\user\UserBlogController;
 use App\Http\Controllers\user\UserContactController;
 use App\Http\Controllers\user\UserHomeController;
+use App\Http\Controllers\user\UserPrivacyPolicyController;
 use App\Http\Controllers\user\UserProjectController;
 use App\Http\Controllers\user\UserServiceController;
 use Illuminate\Support\Facades\Route;
@@ -178,6 +179,6 @@ Route::get('/blog-details/{id}', [UserBlogController::class, 'singleBlogDetails'
 Route::get('/contact', [UserContactController::class, 'index'])->name('user-contact');
 Route::post('/contact', [UserContactController::class, 'store'])->name('user-contact.store');
 
-Route::get('/privacy-policy', function () {
-    return view('user-privacy-policy');
-});
+Route::post('/contact', [UserContactController::class, 'store'])->name('user-contact.store');
+
+Route::get('/privacy-policy', [UserPrivacyPolicyController::class, 'index'])->name('user-privacy-policy');

@@ -9,7 +9,7 @@ class AdminContactController extends Controller
 {
     public function index()
     {
-        $inquiries = ContactModel::get();
+        $inquiries = ContactModel::orderBy('id', 'desc')->get();
         return view('admin-inquiries', compact('inquiries'));
     }
 

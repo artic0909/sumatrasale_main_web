@@ -99,7 +99,7 @@
 
                                 <li class="nav-item btn-org">
                                     <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="mailto:">Let's Talk &nbsp;
+                                        href="mailto:sumatra.sales2424@gmail.com">Let's Talk &nbsp;
                                         <img class="nav-img hide" src="{{asset('./icon/arrow-talk.png')}}" width="15" alt="" /></a>
                                 </li>
                             </ul>
@@ -131,48 +131,32 @@
                                     </span>
                                 </p>
 
-                                <!-- Short Intro Section -->
-                                <p class="fs-6" style="text-align: justify; opacity: 0.75">
-                                    <strong>Graphicode India is a leading digital solutions
-                                        provider🚀,</strong>
-                                    specializing in custom Website development🖥️ & Android app
-                                    development📱 & Brands logo design & Banners & Poster design
-                                    & Brochure & Business Cards design & SEO (Search Engine
-                                    Optimization)🔍. Our team of experts is dedicated to
-                                    delivering innovative, tailored solutions that elevate
-                                    brands and drive business success.
-                                </p>
-
-
-                                <!-- Information Section -->
-                                <div class="d-flex flex-column gap-3 mt-4">
-                                    <p style="text-align: justify; opacity: 0.75" class="fs-9 mt-4">
-                                        At Graphicode India, we take pride in being a premier
-                                        digital solutions provider,
-                                        <strong>specializing in custom website development, Android app
-                                            development, SEO and a range of creative design
-                                            services. From logos and banners to brochures and
-                                            business cards, our team delivers unique, high-quality
-                                            solutions that empower brands and drive growth.</strong>
-                                        With years of experience and a commitment to
-                                        affordability, we’ve successfully partnered with
-                                        businesses across various industries to bring their
-                                        visions to life.
+                                <!-- Privacy Policy 1 -->
+                                <div class="mb-4">
+                                    <h6 class="fw-semibold">1. Data Collection & Use</h6>
+                                    <p class="fs-6" style="text-align: justify; opacity: 0.75">
+                                        At <strong>Sumatra Sales Pvt. Ltd.</strong>, we value your privacy and are committed to
+                                        protecting your personal information. When you interact with our services —
+                                        <strong>Your Marketing Partner, Graphicode India</strong>, or <strong>Schoolwala</strong> —
+                                        we may collect basic details such as your name, contact information, and service preferences.
+                                        This data is used solely to provide customized business, software, and educational solutions,
+                                        ensuring a secure and efficient user experience. We do not sell or share your information
+                                        with third parties without your consent.
                                     </p>
+                                </div>
 
-                                    <p style="text-align: justify; opacity: 0.75" class="fs-9 mt-4">
-                                        We believe that creativity and functionality go hand in
-                                        hand to create impactful digital experiences. Our approach
-                                        combines cutting-edge technology with imaginative design
-                                        to deliver solutions that are not only visually stunning
-                                        but also highly effective. Whether you need a fully
-                                        customized website, an engaging mobile application, or
-                                        comprehensive branding materials,
-                                        <strong>we ensure every project is tailored to meet your needs,
-                                            fit your budget, and exceed expectations. With
-                                            negotiable pricing and affordable AMC (Annual
-                                            Maintenance Contract) options,</strong>
-                                        we make innovative solutions accessible to all businesses.
+                                <!-- Privacy Policy 2 -->
+                                <div>
+                                    <h6 class="fw-semibold">2. Data Security & Transparency</h6>
+                                    <p class="fs-6" style="text-align: justify; opacity: 0.75">
+                                        All information shared through our platforms — including
+                                        <a href="https://graphicodeindia.com" target="_blank">Graphicode India</a> and
+                                        <a href="https://www.schoolwala.info" target="_blank">Schoolwala</a> —
+                                        is handled with strict security measures. We use encrypted systems, secure servers,
+                                        and updated software protocols to prevent unauthorized access.
+                                        Users can request access, correction, or deletion of their data at any time.
+                                        <strong>Sumatra Sales Pvt. Ltd.</strong> remains committed to maintaining transparency
+                                        and trust in every interaction across our marketing, technology, and education services.
                                     </p>
                                 </div>
 
@@ -194,7 +178,7 @@
                                 <p class="fw-bold fs-4 text-start m-0 video-title">
                                     👋Welcome To <span class="clr-bl">SSPL GROUPS</span>
                                 </p>
-                               @foreach ($videos as $video)
+                                @foreach ($videos as $video)
                                 <p class="fs-6 m-0 video-desc" style="text-align: justify">
                                     {{ $video->desc }}
                                 </p>

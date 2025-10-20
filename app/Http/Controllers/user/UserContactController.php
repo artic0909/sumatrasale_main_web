@@ -22,11 +22,11 @@ class UserContactController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'name' => 'string',
-            'phone_number' => 'string',
-            'email' => 'string',
-            'service' => 'string',
-            'inquiry' => 'string',
+            'name' => 'required|string|max:255',
+            'phone_number' => 'required|string|regex:/^[0-9+\-\s()]{7,15}$/',
+            'email' => 'required|email|max:255',
+            'service' => 'required|string|max:255',
+            'inquiry' => 'required|string|max:1000',
         ]);
 
         try {
@@ -35,6 +35,5 @@ class UserContactController extends Controller
         } catch (\Exception $e) {
             return back()->with('error', 'Failed to send inquiry. Please try again.');
         }
-        return back()->with('success', 'Information added successfully!');
     }
 }

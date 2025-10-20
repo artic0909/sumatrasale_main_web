@@ -97,7 +97,7 @@
 
                                 <li class="nav-item btn-org">
                                     <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="mailto:">Let's Talk &nbsp;
+                                        href="mailto:sumatra.sales2424@gmail.com">Let's Talk &nbsp;
                                         <img class="nav-img hide" src="{{asset('./icon/arrow-talk.png')}}" width="15" alt="" /></a>
                                 </li>
                             </ul>
@@ -164,7 +164,7 @@
 
                                                             <div class="form-group bg-white p-3 rounded">
                                                                 <label for="phone_number" class="fw-bold pb-2">Phone</label>
-                                                                <input type="text" class="form-control" id="phone_number" name="phone_number"
+                                                                <input type="number" class="form-control" id="phone_number" name="phone_number"
                                                                     placeholder="Enter your number" required>
                                                             </div>
 
