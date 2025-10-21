@@ -199,7 +199,7 @@
 
                             <div class="card-content mt-2 p-3">
                                 <p class="fw-bold fs-4 text-start m-0 video-title">
-                                    👋Welcome To <span class="clr-bl">SSPL GROUPS</span>
+                                    👋Welcome To <span class="clr-bl">Sumatra Sales</span>
                                 </p>
                                 @foreach ($videos as $video)
                                 <p class="fs-6 m-0 video-desc" style="text-align: justify">

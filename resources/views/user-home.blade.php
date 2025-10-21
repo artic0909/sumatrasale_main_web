@@ -155,7 +155,7 @@
                             <div class="card-content mt-2" style="padding: 16px;">
                                 @foreach($videos as $video)
                                 <p class="fw-bold fs-4 text-start m-0 video-title">
-                                    👋Welcome To <span class="clr-bl">SSPL GROUPS</span>
+                                    👋Welcome To <span class="clr-bl">Sumatra Sales</span>
                                 </p>
                                 <p class="fs-6 m-0 video-desc" style="text-align: justify">
                                     {{ $video->desc }}
