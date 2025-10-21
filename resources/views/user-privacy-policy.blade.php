@@ -4,7 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
     <title>Privacy Policy | Sumatra Sales Private Limited</title>
+    <meta name="description" content="Read Sumatra Sales Pvt. Ltd. Privacy Policy. Learn how we collect, use, and protect your personal information while using our services." />
+    <meta name="keywords" content="Privacy Policy, Sumatra Sales, Data Security, Personal Information" />
+    <meta name="author" content="Sumatra Sales Pvt. Ltd." />
+    <link rel="canonical" href="{{ url()->current() }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy | Sumatra Sales Private Limited" />
+    <meta property="og:description" content="Read Sumatra Sales Pvt. Ltd. Privacy Policy. Learn how we collect, use, and protect your personal information while using our services." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="{{ asset('./sumatra2.png') }}" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Privacy Policy | Sumatra Sales Private Limited" />
+    <meta name="twitter:description" content="Read Sumatra Sales Pvt. Ltd. Privacy Policy. Learn how we collect, use, and protect your personal information while using our services." />
+    <meta name="twitter:image" content="{{ asset('./sumatra2.png') }}" />
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />

@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Sumatra Sales Private Limited</title>
+    <title>About Sumatra Sales Pvt. Ltd. | Marketing, Software & Education Company</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Learn about Sumatra Sales Pvt. Ltd., a multi-vertical Indian enterprise specializing in marketing services, custom software solutions via Graphicode India, and online education through Schoolwala. Discover our vision, values, and mission." />
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="Sumatra Sales, About Sumatra Sales, Marketing Partner India, Graphicode India, Custom Software Development, HR Management Software, Retail Software, E-commerce Solutions, Schoolwala, Online Education India, Digital Learning Platform" />
+
+    <!-- Author -->
+    <meta name="author" content="Sumatra Sales Pvt. Ltd." />
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
@@ -24,6 +33,22 @@
 
 
     <!-- <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> -->
+
+    <!-- Open Graph / Facebook SEO -->
+    <meta property="og:title" content="About Sumatra Sales Pvt. Ltd. | Marketing, Software & Education" />
+    <meta property="og:description" content="Discover Sumatra Sales Pvt. Ltd., a leading Indian company providing marketing services, custom software solutions via Graphicode India, and digital education through Schoolwala." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sumatrasales.com/about" />
+    <meta property="og:image" content="https://sumatrasales.com/img/about-og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Sumatra Sales Pvt. Ltd. | Marketing, Software & Education" />
+    <meta name="twitter:description" content="Sumatra Sales Pvt. Ltd. is a multi-vertical enterprise specializing in marketing, software development via Graphicode India, and online education with Schoolwala." />
+    <meta name="twitter:image" content="https://sumatrasales.com/img/about-og-image.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sumatrasales.com/about" />
 
 </head>
 

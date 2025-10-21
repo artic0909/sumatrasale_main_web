@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Sumatra Sales Private Limited</title>
 
+    <!-- Dynamic SEO Meta Tags -->
+    <meta name="description" content="Explore the latest projects by Sumatra Sales Private Limited. See creative solutions and innovative designs that transform businesses." />
+
+    <meta name="keywords" content="
+    @foreach($projects as $project)
+        {{ $project->title }}, {{ $project->category }}@if(!$loop->last), @endif
+    @endforeach, Sumatra Sales, Business Solutions, Creative Design, Projects" />
+
+    <meta name="author" content="Sumatra Sales Private Limited" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Projects | Sumatra Sales Private Limited" />
+    <meta property="og:description" content="Explore creative projects by Sumatra Sales Private Limited. Discover business solutions and innovative designs." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="@if($projects->count()){{ asset('storage/' . $projects->first()->image) }}@else{{ asset('./sumatra2.png') }}@endif" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projects | Sumatra Sales Private Limited" />
+    <meta name="twitter:description" content="Check out the projects by Sumatra Sales Private Limited. Creative business solutions and innovative designs." />
+    <meta name="twitter:image" content="@if($projects->count()){{ asset('storage/' . $projects->first()->image) }}@else{{ asset('./sumatra2.png') }}@endif" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ url()->current() }}" />
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/fixed.css')}}" />

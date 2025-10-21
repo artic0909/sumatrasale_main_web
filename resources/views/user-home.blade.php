@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumatra Sales Private Limited | Best Marketing Agency</title>
+        <title>Sumatra Sales Pvt. Ltd. | Marketing, Software Development & Education Solutions</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Sumatra Sales Pvt. Ltd. is a leading Indian enterprise offering marketing services, custom software solutions through Graphicode India, and online education via Schoolwala. Empowering businesses, technology, and learning across India." />
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="Sumatra Sales, Marketing Partner India, Graphicode India, Custom Software Development, HR Management Software, Retail Software, E-commerce Solutions, Schoolwala, Online Education India, Digital Learning Platform, Education for All" />
+
+    <!-- Author -->
+    <meta name="author" content="Sumatra Sales Pvt. Ltd." />
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
@@ -21,6 +30,22 @@
 
 
     <!-- <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> -->
+
+    <!-- Open Graph / Facebook SEO -->
+    <meta property="og:title" content="Sumatra Sales Pvt. Ltd. | Marketing, Software Development & Education Solutions" />
+    <meta property="og:description" content="Leading Indian company offering marketing services, Graphicode India software solutions, and Schoolwala online education platform for Classes 1-12 in English, Bengali, and Hindi." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sumatrasales.com" />
+    <meta property="og:image" content="https://sumatrasales.com/img/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sumatra Sales Pvt. Ltd. | Marketing, Software Development & Education Solutions" />
+    <meta name="twitter:description" content="Empowering businesses, technology, and education in India. Marketing partner, custom software via Graphicode India, and e-learning with Schoolwala." />
+    <meta name="twitter:image" content="https://sumatrasales.com/img/og-image.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sumatrasales.com" />
 
 </head>
 

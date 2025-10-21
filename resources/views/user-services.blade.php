@@ -6,6 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services | Sumatra Sales Private Limited</title>
 
+    <!-- Dynamic Meta Description -->
+    <meta name="description" content="
+    @php
+        $allServices = collect([]);
+        $allServices = $allServices->merge($marketingServices)
+                                   ->merge($DigitalServices)
+                                   ->merge($WebsiteAppDevelopmentServices)
+                                   ->merge($softwareServices)
+                                   ->merge($educationalServices)
+                                   ->merge($creativeDesignStudioServices)
+                                   ->merge($consultancyBusinessSupportServices)
+                                   ->merge($offlineFieldServices);
+        $serviceNames = $allServices->pluck('title')->implode(', ');
+        echo 'Explore top services from Sumatra Sales Pvt. Ltd.: ' . $serviceNames . '. We provide marketing, software, digital solutions, education, creative & business support.';
+    @endphp
+    " />
+
+    <!-- Dynamic Meta Keywords -->
+    <meta name="keywords" content="
+    @php
+        echo $serviceNames;
+    @endphp
+    " />
+
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="Services | Sumatra Sales Private Limited" />
+    <meta property="og:description" content="Explore top services from Sumatra Sales Pvt. Ltd.: {{ $serviceNames }}. Marketing, Software, Education & More!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="{{ asset('sumatra2.png') }}" />
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:title" content="Services | Sumatra Sales Private Limited" />
+    <meta name="twitter:description" content="Explore top services from Sumatra Sales Pvt. Ltd.: {{ $serviceNames }}. Marketing, Software, Education & More!" />
+    <meta name="twitter:image" content="{{ asset('sumatra2.png') }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />

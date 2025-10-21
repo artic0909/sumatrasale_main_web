@@ -4,8 +4,33 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Details | Sumatra Sales Private Limited</title>
+    <!-- Dynamic Page Title -->
+    <title>{{ $blog->title }} | Sumatra Sales Pvt. Ltd.</title>
 
+    <!-- Dynamic Meta Description -->
+    <meta name="description" content="{{ Str::limit(strip_tags($blog->desc), 160, '...') }}" />
+
+    <!-- Meta Keywords (optional) -->
+    <meta name="keywords" content="Sumatra Sales Blog, {{ $blog->title }}, Business, Marketing, Design, Software" />
+
+    <!-- Author -->
+    <meta name="author" content="Sumatra Sales Pvt. Ltd." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ $blog->title }} | Sumatra Sales Pvt. Ltd." />
+    <meta property="og:description" content="{{ Str::limit(strip_tags($blog->desc), 160, '...') }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="{{ asset('storage/' . $blog->image) }}" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ $blog->title }} | Sumatra Sales Pvt. Ltd." />
+    <meta name="twitter:description" content="{{ Str::limit(strip_tags($blog->desc), 160, '...') }}" />
+    <meta name="twitter:image" content="{{ asset('storage/' . $blog->image) }}" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ url()->current() }}" />
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/fixed.css')}}" />

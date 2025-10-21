@@ -4,7 +4,36 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blogs | Sumatra Sales Private Limited</title>
+    <!-- Page Title -->
+    <title>Blogs & Articles | Sumatra Sales Pvt. Ltd.</title>
+
+    <!-- Dynamic Meta Description (includes first 3 blog titles) -->
+    @php
+    $blogTitles = $blogs->take(3)->pluck('title')->implode(', ');
+    @endphp
+    <meta name="description" content="Explore the latest blogs and articles from Sumatra Sales Pvt. Ltd. on marketing, software solutions, design, and business growth including: {{ $blogTitles }}." />
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="Sumatra Sales Blogs, Marketing, Software, Design, Business Growth, {{ $blogTitles }}" />
+
+    <!-- Author -->
+    <meta name="author" content="Sumatra Sales Pvt. Ltd." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sumatra Sales Blogs & Articles" />
+    <meta property="og:description" content="Stay updated with blogs from Sumatra Sales Pvt. Ltd. covering marketing strategies, software solutions, and business growth tips including: {{ $blogTitles }}." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="{{ asset('img/blogs-og-image.jpg') }}" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sumatra Sales Blogs & Articles" />
+    <meta name="twitter:description" content="Explore blogs from Sumatra Sales Pvt. Ltd. on marketing, software, and business growth including: {{ $blogTitles }}." />
+    <meta name="twitter:image" content="{{ asset('img/blogs-og-image.jpg') }}" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ url()->current() }}" />
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
