@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sumatra Sales Pvt. Ltd. | Marketing, Software Development & Education Solutions</title>
+    <title>Sumatra Sales Pvt. Ltd. | Doctorwala Medical Ecosystem & Schoolwala E-learning Platform</title>
 
-    <!-- Meta Description for SEO -->
-    <meta name="description" content="Sumatra Sales Pvt. Ltd. is a leading Indian enterprise offering marketing services, custom software solutions through Graphicode India, and online education via Schoolwala. Empowering businesses, technology, and learning across India." />
-
-    <!-- Meta Keywords -->
-    <meta name="keywords" content="Sumatra Sales, Marketing Partner India, Graphicode India, Custom Software Development, HR Management Software, Retail Software, E-commerce Solutions, Schoolwala, Online Education India, Digital Learning Platform, Education for All" />
-
-    <!-- Author -->
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Sumatra Sales Pvt. Ltd. | Leading Digital Innovation with Doctorwala Medical Ecosystem and Schoolwala E-learning Platform. Specializing in Healthcare IT, EdTech, and Custom Software Solutions in India." />
+    <meta name="keywords" content="Sumatra Sales Pvt Ltd, Doctorwala Medical Ecosystem, Schoolwala E-learning Platform, Healthcare IT India, Digital Education Platform, Doctorwala App, Schoolwala Learning, Software Development India, Sumatra Sales Projects" />
     <meta name="author" content="Sumatra Sales Pvt. Ltd." />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
@@ -31,21 +30,26 @@
 
     <!-- <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> -->
 
-    <!-- Open Graph / Facebook SEO -->
-    <meta property="og:title" content="Sumatra Sales Pvt. Ltd. | Marketing, Software Development & Education Solutions" />
-    <meta property="og:description" content="Leading Indian company offering marketing services, Graphicode India software solutions, and Schoolwala online education platform for Classes 1-12 in English, Bengali, and Hindi." />
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sumatrasales.com" />
-    <meta property="og:image" content="https://sumatrasales.com/img/og-image.jpg" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title" content="Sumatra Sales Pvt. Ltd. | Doctorwala & Schoolwala" />
+    <meta property="og:description" content="Empowering Healthcare with Doctorwala and Education with Schoolwala. Leading IT solutions provider in India." />
+    <meta property="og:image" content="{{ asset('sumatra2.png') }}" />
+    <meta property="og:site_name" content="Sumatra Sales" />
+    <meta property="og:locale" content="en_US" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sumatra Sales Pvt. Ltd. | Marketing, Software Development & Education Solutions" />
-    <meta name="twitter:description" content="Empowering businesses, technology, and education in India. Marketing partner, custom software via Graphicode India, and e-learning with Schoolwala." />
-    <meta name="twitter:image" content="https://sumatrasales.com/img/og-image.jpg" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ url()->current() }}" />
+    <meta property="twitter:title" content="Sumatra Sales Pvt. Ltd. | Doctorwala & Schoolwala" />
+    <meta property="twitter:description" content="Empowering Healthcare with Doctorwala and Education with Schoolwala. Leading IT solutions provider in India." />
+    <meta property="twitter:image" content="{{ asset('sumatra2.png') }}" />
+    <meta name="twitter:site" content="@SumatraSales" />
+    <meta name="twitter:creator" content="@SumatraSales" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://sumatrasales.com" />
+    <link rel="canonical" href="{{ url()->current() }}" />
 
 </head>
 
@@ -84,23 +88,28 @@
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 align-items-center">
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page" id="active-nav"
-                                        href="/"><img class="nav-img" src="{{asset('./icon/home.png')}}" width="19" alt="" />&nbsp;<span>Home</span></a>
+                                        href="/"><img class="nav-img" src="{{asset('./icon/home.png')}}" width="19" alt="Home Icon" />&nbsp;<span>Home</span></a>
                                 </li>
 
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/about"><img class="nav-img"
-                                            src="{{asset('./icon/about.png')}}" width="19" alt="" />&nbsp;<span>About</span></a>
+                                            src="{{asset('./icon/about.png')}}" width="19" alt="About Icon" />&nbsp;<span>About</span></a>
                                 </li>
+
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/services"><img class="nav-img"
+                                            src="{{asset('./icon/services.png')}}" width="22" alt="Services Icon" />&nbsp;<span>Services</span></a>
+                                </li> -->
 
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/services"><img class="nav-img"
-                                            src="{{asset('./icon/services.png')}}" width="22" alt="" />&nbsp;<span>Services</span></a>
+                                            src="{{asset('./icon/services.png')}}" width="22" alt="Services Icon" />&nbsp;<span>Products</span></a>
                                 </li>
 
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/projects"><img class="nav-img"
                                             src="{{asset('./icon/projects.png')}}" width="18" alt="" />&nbsp;<span>Projects</span></a>
-                                </li>
+                                </li> -->
 
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/blogs"><img class="nav-img"
@@ -140,7 +149,7 @@
                     <section class="main-section mt-4">
                         <div class="shadow border p-3">
                             <div class="inner-items-center">
-                                <span class="fw-bold service-title-text fs-4 col-6">Services We Offered</span>
+                                <h2 class="fw-bold service-title-text fs-4 col-6">Services We Offered</h2>
                                 <a href="/services" class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer; text-decoration: none;">
                                     All Services
                                     <img src="{{asset('./icon/arrow.png')}}" alt="" width="20" />
@@ -153,7 +162,7 @@
                                 <div class="p-4 pb-0" style="background: #cecdd891; border-radius: 15px">
                                     <div style="border-radius: 10px"
                                         class="img-container bg-white p-3 d-flex justify-content-center align-items-center">
-                                        <img src="{{ asset('storage/' . $service->image) }}" width="86" alt="" />
+                                        <img src="{{ asset('storage/' . $service->image) }}" width="86" alt="{{ $service->title }}" />
                                     </div>
 
                                     <div class="card-content mt-2">
@@ -179,9 +188,9 @@
 
                             <div class="card-content mt-2" style="padding: 16px;">
                                 @foreach($videos as $video)
-                                <p class="fw-bold fs-4 text-start m-0 video-title">
+                                <h1 class="fw-bold fs-4 text-start m-0 video-title">
                                     👋Welcome To <span class="clr-bl">Sumatra Sales</span>
-                                </p>
+                                </h1>
                                 <p class="fs-6 m-0 video-desc" style="text-align: justify">
                                     {{ $video->desc }}
                                 </p>
@@ -225,7 +234,7 @@
                     <section class="main-section mt-4">
                         <div class="shadow border p-3">
                             <div class="inner-items-center">
-                                <span class="fw-bold fs-4 service-title-text col-6">Our Projects</span>
+                                <h2 class="fw-bold fs-4 service-title-text col-6">Our Projects</h2>
                                 <a href="/projects" class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer; text-decoration: none;">
                                     See All
                                     <img src="{{asset('./icon/arrow.png')}}" alt="" width="20" />
@@ -242,7 +251,7 @@
                       " class="img-scroll-container bg-white">
 
                                         @foreach($projects as $project)
-                                        <img src="{{ asset('storage/' . $project->image) }}" style="width: 100%" alt="" />
+                                        <img src="{{ asset('storage/' . $project->image) }}" style="width: 100%" alt="{{ $project->title }}" />
                                         @endforeach
 
                                     </div>
@@ -260,7 +269,7 @@
                     <section class="main-section mt-4">
                         <div class="shadow border p-3">
                             <div class="inner-items-center">
-                                <span class="fw-bold fs-4 service-title-text col-6">Latest Blogs</span>
+                                <h2 class="fw-bold fs-4 service-title-text col-6">Latest Blogs</h2>
                                 <a href="/blogs" class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer; text-decoration: none;">
                                     See All
                                     <img src="{{asset('./icon/arrow.png')}}" alt="" width="20" />
@@ -275,7 +284,7 @@
                                         <div class="container-for-blog d-flex align-items-center gap-2">
                                             <div class="img-container bg-white p-2 d-flex justify-content-center align-items-center"
                                                 style="border-radius: 5px">
-                                                <img src="{{ asset('storage/' . $blog->image) }}" width="30" alt="" />
+                                                <img src="{{ asset('storage/' . $blog->image) }}" width="30" alt="{{ $blog->title }}" />
                                             </div>
                                             <div class="card-content">
                                                 <p class="fw-bold fs-6 text-center m-0">
@@ -307,7 +316,7 @@
                     <section class="main-section mt-4">
                         <div class="shadow border p-3">
                             <div class="inner-items-center">
-                                <span class="fw-bold fs-4 col-6 service-title-text">Specialized</span>
+                                <h2 class="fw-bold fs-4 col-6 service-title-text">Specialized</h2>
                                 <a href="/services/#specialized" class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer; text-decoration: none;">
                                     See All
                                     <img src="{{asset('./icon/arrow.png')}}" alt="" width="20" />
@@ -320,7 +329,7 @@
                                 <div class="p-2" style="background: #cecdd891; border-radius: 10px">
                                     <div style="border-radius: 5px"
                                         class="img-container bg-white p-2 d-flex justify-content-center align-items-center">
-                                        <img src="{{ asset('storage/' . $info->logo) }}" width="40" alt="" />
+                                        <img src="{{ asset('storage/' . $info->logo) }}" width="40" alt="{{ $info->title }}" />
                                     </div>
 
                                     <div class="card-content mt-2">
@@ -350,7 +359,7 @@
                     <section class="main-section col-12 mt-4">
                         <div class="shadow border p-3">
                             <div class="inner-items-center">
-                                <span class="fw-bold fs-4 col-6 service-title-text">Our Partners</span>
+                                <h2 class="fw-bold fs-4 col-6 service-title-text">Our Partners</h2>
                                 <!-- <span class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer">
                                     See All
                                     <img src="{{asset('./icon/arrow.png')}}" alt="" width="20" />
@@ -361,7 +370,7 @@
                                 <div class="partners-container mt-2 mb-2 d-flex align-items-center gap-3">
                                     @foreach($partners as $partner)
                                     <div class="partner-item p-2 bg-white border rounded">
-                                        <img src="{{ asset('storage/' . $partner->partner_logo) }}" alt="" width="120" style="height: auto; max-height: 80px; object-fit: contain;" />
+                                        <img src="{{ asset('storage/' . $partner->partner_logo) }}" alt="Partner Logo" width="120" style="height: auto; max-height: 80px; object-fit: contain;" />
                                     </div>
                                     @endforeach
                                 </div>
@@ -440,7 +449,7 @@
                     <section class="main-section mt-4">
                         <div class="shadow border p-3">
                             <div class="text-end faq-title">
-                                <span class="fw-bold fs-4 service-title-text">Frequently Asked Questions</span>
+                                <h2 class="fw-bold fs-4 service-title-text">Frequently Asked Questions</h2>
                             </div>
 
                             <div class="accordian-main gap-3 mt-2" style="padding: 16px;">
