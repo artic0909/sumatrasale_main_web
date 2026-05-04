@@ -33,7 +33,17 @@ class IndexController extends Controller
     }
     public function about()
     {
-        return view('new.about');
+        $services = AdminServiceModel::inRandomOrder()->paginate(9);
+        $videos = AdminVideoDescModel::get();
+        $projects = AdminProjectModel::get();
+        $blogs = AdminBlogModel::get();
+        $spInfo = AdminSpecializedModel::inRandomOrder()->paginate(6);
+        $partners = AdminPartnerModel::get();
+        $nums = AdminNumbersModel::get();
+        $marquees = AdminMarqueeTextModel::get();
+        $faqs = AdminAboutFAQModel::get();
+
+        return view('new.about', compact('services', 'videos', 'projects', 'blogs', 'spInfo', 'partners', 'nums', 'marquees', 'faqs'));
     }
     public function doctorwala()
     {

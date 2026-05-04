@@ -172,7 +172,7 @@ Route::get('/', [IndexController::class, 'index'])->name('user-home');
 Route::get('/doctorwala', [IndexController::class, 'doctorwala'])->name('doctorwala');
 Route::get('/schoolwala', [IndexController::class, 'schoolwala'])->name('schoolwala');
 
-Route::get('/about', [UserAboutController::class, 'index'])->name('user-about');
+Route::get('/about', [IndexController::class, 'about'])->name('user-about');
 
 Route::get('/services', [UserServiceController::class, 'index'])->name('user-services');
 
