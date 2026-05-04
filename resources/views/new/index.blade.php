@@ -89,12 +89,12 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page"
-                                        href="/"><img class="nav-img" src="{{asset('./icon/doctor.png')}}" width="19" alt="Doctorwala Icon" />&nbsp;<span>Doctorwala</span></a>
+                                        href="/doctorwala"><img class="nav-img" src="{{asset('./icon/doctor.png')}}" width="19" alt="Doctorwala Icon" />&nbsp;<span>Doctorwala</span></a>
                                 </li>
 
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page"
-                                        href="/"><img class="nav-img" src="{{asset('./icon/graduation.png')}}" width="19" alt="Schoolwala Icon" />&nbsp;<span>Schoolwala</span></a>
+                                        href="/schoolwala"><img class="nav-img" src="{{asset('./icon/graduation.png')}}" width="19" alt="Schoolwala Icon" />&nbsp;<span>Schoolwala</span></a>
                                 </li>
 
                                 <li class="nav-item">
@@ -161,6 +161,16 @@
                             width: 24px;
                             height: 24px;
                             object-fit: contain;
+                        }
+                        .logo-3d {
+                            transition: all 0.3s ease;
+                            background: #fff !important;
+                            border-bottom: 3px solid rgba(0,0,0,0.1) !important;
+                        }
+                        .logo-3d:hover {
+                            transform: translateY(-3px) scale(1.05);
+                            border-bottom-width: 5px !important;
+                            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
                         }
                         .btn-visit {
                             background: linear-gradient(45deg, #0d6efd, #004085);
@@ -281,8 +291,8 @@
                                 <!-- Doctorwala Project -->
                                 <div class="product-card shadow-sm border p-4 rounded-4 bg-white d-flex flex-column h-100">
                                     <div class="d-flex align-items-center mb-3">
-                                        <div class="bg-primary bg-opacity-10 p-2 rounded-circle">
-                                            <img src="{{asset('img/products/doctorwala.png')}}" alt="Doctorwala Logo" width="45">
+                                        <div class="bg-white p-2 rounded-3 shadow-sm border border-light-subtle logo-3d" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                            <img src="{{asset('img/products/doctorwala.png')}}" alt="Doctorwala Logo" width="45" class="rounded-1">
                                         </div>
                                         <div class="ms-3">
                                             <h3 class="fw-bold fs-4 mb-0">Doctorwala</h3>
@@ -326,8 +336,8 @@
                                 <!-- Schoolwala Project -->
                                 <div class="product-card shadow-sm border p-4 rounded-4 bg-white d-flex flex-column h-100">
                                     <div class="d-flex align-items-center mb-3">
-                                        <div class="bg-success bg-opacity-10 p-2 rounded-circle">
-                                            <img src="{{asset('img/products/Schoolwala.jpg')}}" alt="Schoolwala Logo" width="45" class="rounded-circle">
+                                        <div class="bg-white p-2 rounded-3 shadow-sm border border-light-subtle logo-3d" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                            <img src="{{asset('img/products/Schoolwala.jpg')}}" alt="Schoolwala Logo" width="45" class="rounded-1">
                                         </div>
                                         <div class="ms-3">
                                             <h3 class="fw-bold fs-4 mb-0">Schoolwala</h3>

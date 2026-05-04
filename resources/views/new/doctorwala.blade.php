@@ -87,12 +87,12 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page" id="active-nav"
-                                        href="/"><img class="nav-img" src="{{asset('./icon/doctor.png')}}" width="19" alt="Doctorwala Icon" />&nbsp;<span>Doctorwala</span></a>
+                                        href="/doctorwala"><img class="nav-img" src="{{asset('./icon/doctor.png')}}" width="19" alt="Doctorwala Icon" />&nbsp;<span>Doctorwala</span></a>
                                 </li>
 
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page"
-                                        href="/"><img class="nav-img" src="{{asset('./icon/graduation.png')}}" width="19" alt="Schoolwala Icon" />&nbsp;<span>Schoolwala</span></a>
+                                        href="/schoolwala"><img class="nav-img" src="{{asset('./icon/graduation.png')}}" width="19" alt="Schoolwala Icon" />&nbsp;<span>Schoolwala</span></a>
                                 </li>
 
                                 <li class="nav-item">
@@ -191,7 +191,7 @@
                         display: flex;
                         gap: 30px;
                         width: max-content;
-                        animation: scroll 40s linear infinite;
+                        animation: scroll 60s linear infinite;
                     }
                     .carousel-track:hover {
                         animation-play-state: paused;
@@ -257,7 +257,55 @@
                             padding: 2.5rem;
                         }
                     }
+
+                    /* Floating Background Icons */
+                    .floating-medical-bg {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        pointer-events: none;
+                        z-index: -1;
+                        overflow: hidden;
+                        opacity: 0.4;
+                    }
+                    .med-icon {
+                        position: absolute;
+                        color: rgba(46, 74, 159, 0.08);
+                        animation: medFloat 20s infinite ease-in-out;
+                    }
+                    @keyframes medFloat {
+                        0%, 100% { transform: translateY(0) rotate(0deg); }
+                        50% { transform: translateY(-40px) rotate(15deg); }
+                    }
                 </style>
+
+                <!-- Floating Background Elements -->
+                <div class="floating-medical-bg">
+                    <!-- Large Icons -->
+                    <i class="bi bi-heart-pulse med-icon" style="top: 10%; left: 5%; font-size: 6rem; animation-delay: 0s;"></i>
+                    <i class="bi bi-hospital med-icon" style="top: 60%; right: 5%; font-size: 7rem; animation-delay: 3s;"></i>
+                    <i class="bi bi-lungs med-icon" style="bottom: 20%; right: 15%; font-size: 6rem; animation-delay: 1s;"></i>
+
+                    <!-- Many Small Icons Scattered -->
+                    <i class="bi bi-capsule med-icon" style="top: 5%; left: 25%; font-size: 2.5rem; animation-delay: 2s;"></i>
+                    <i class="bi bi-thermometer-half med-icon" style="top: 20%; left: 15%; font-size: 2rem; animation-delay: 4s;"></i>
+                    <i class="bi bi-activity med-icon" style="top: 35%; right: 25%; font-size: 3rem; animation-delay: 1.5s;"></i>
+                    <i class="bi bi-clipboard2-pulse med-icon" style="top: 50%; left: 8%; font-size: 2.5rem; animation-delay: 6s;"></i>
+                    <i class="bi bi-droplet med-icon" style="bottom: 10%; left: 30%; font-size: 2rem; animation-delay: 2.5s;"></i>
+                    <i class="bi bi-bandaid med-icon" style="top: 15%; right: 20%; font-size: 2.2rem; animation-delay: 7s;"></i>
+                    <i class="bi bi-heart med-icon" style="bottom: 30%; left: 20%; font-size: 3rem; animation-delay: 3.5s;"></i>
+                    <i class="bi bi-patch-plus med-icon" style="top: 40%; left: 40%; font-size: 2.5rem; animation-delay: 5.5s;"></i>
+                    <i class="bi bi-shield-plus med-icon" style="bottom: 5%; right: 35%; font-size: 2.8rem; animation-delay: 0.5s;"></i>
+                    <i class="bi bi-virus med-icon" style="top: 70%; left: 15%; font-size: 2.3rem; animation-delay: 8s;"></i>
+                    <i class="bi bi-prescription med-icon" style="top: 80%; right: 25%; font-size: 3.5rem; animation-delay: 4.5s;"></i>
+                    <i class="bi bi-person-badge med-icon" style="bottom: 45%; right: 8%; font-size: 2.4rem; animation-delay: 9s;"></i>
+                    <i class="bi bi-heart-pulse-fill med-icon" style="top: 55%; left: 45%; font-size: 2.1rem; animation-delay: 10s;"></i>
+                    <i class="bi bi-capsule-pill med-icon" style="top: 28%; left: 60%; font-size: 2.6rem; animation-delay: 11s;"></i>
+                    <i class="bi bi-ear-fill med-icon" style="bottom: 15%; left: 55%; font-size: 2.2rem; animation-delay: 12s;"></i>
+                    <i class="bi bi-eyedropper med-icon" style="top: 12%; left: 80%; font-size: 2.4rem; animation-delay: 13s;"></i>
+                </div>
 
                 <div class="promo-container">
                     <div class="hero-row">
@@ -267,11 +315,13 @@
                                 <img src="{{asset('img/products/doctorwala.png')}}" alt="Doctorwala Logo" width="130" class="img-fluid">
                             </div>
                             <h1 class="fw-bold clr-bl mb-3" style="font-size: 3.5rem; line-height: 1.1;">Doctorwala <br><span class="text-primary">Medical Ecosystem</span></h1>
-                            <p class="fs-5 text-secondary mb-5" style="text-align: justify; max-width: 90%; line-height: 1.7;">India's first unified healthcare platform designed to connect millions of patients with verified doctors, clinics, and pharmacies. We bridge the gap between healthcare providers and seekers with cutting-edge technology.</p>
+                            <p class="fs-5 text-secondary mb-5" style="text-align: justify; max-width: 90%; line-height: 1;">When someone in your family needs a doctor, every second feels important. Searching, calling, waiting — it shouldn’t be this hard.</p>
+                            <p class="fs-5 text-secondary mb-5" style="text-align: justify; max-width: 90%; line-height: 1;">Doctorwala connects you to nearby doctors, clinics, OPDs, and medical shops across India — from busy cities to the smallest villages. With just a few clicks, patients can find the right doctor and connect instantly.</p>
+                            <p class="fs-5 text-secondary mb-5" style="text-align: justify; max-width: 90%; line-height: 1;">We also provide a secure Personal Medical ID, so your medical history stays organized and accessible whenever you need it. Because better records mean better diagnosis. And better diagnosis means better care.</p>
                             
                             <div class="d-flex flex-wrap gap-4 justify-content-center justify-content-lg-start mb-5">
                                 <a href="https://www.doctorwala.info/" target="_blank" class="btn bg-white border-2 border-primary clr-bl px-5 py-3 fw-bold rounded-pill shadow-sm fs-5 visit-btn-new">Visit Website <i class="bi bi-box-arrow-up-right ms-2"></i></a>
-                                <a href="#" class="btn-app-download">
+                                <a href="https://play.google.com/store/apps/details?id=com.doctorwala.dochealth&pcampaignid=web_share" class="btn-app-download">
                                     <i class="bi bi-play-fill me-3 fs-4"></i> Get it on Play Store
                                 </a>
                             </div>
@@ -378,11 +428,11 @@
 
                                     <div class="buttons video-buttons d-flex justify-content-between gap-2" style="padding: 16px;">
                                         @foreach($videos as $video)
-                                        <a href="https://wa.me/{{ $video->contact }}" class="btn btn-danger btns-1 fw-semibold p-3 px-4 flex-grow-1 d-flex align-items-center justify-content-center">
+                                        <a href="https://wa.me/916292237207" class="btn btn-danger btns-1 fw-semibold p-3 px-4 flex-grow-1 d-flex align-items-center justify-content-center">
                                             <img src="{{asset('./icon/whatsapp.png')}}" width="20" class="me-2" alt="" />
                                             Whatsapp
                                         </a>
-                                        <a href="tel:{{ $video->contact }}" class="btn btn-org-01 btns-2 fw-semibold p-3 px-4 flex-grow-1 d-flex align-items-center justify-content-center">
+                                        <a href="tel:916292237207" class="btn btn-org-01 btns-2 fw-semibold p-3 px-4 flex-grow-1 d-flex align-items-center justify-content-center">
                                             <img src="{{asset('./icon/call.png')}}" width="20" class="me-2" alt="" />
                                             Call
                                         </a>
@@ -425,13 +475,13 @@
                                     <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-primary bg-opacity-10 rounded-circle me-3"><i class="bi bi-file-earmark-medical text-primary"></i></div> Digital Prescription Storage</div>
                                     <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-primary bg-opacity-10 rounded-circle me-3"><i class="bi bi-headset text-primary"></i></div> 24/7 Priority Support</div>
                                 </div>
-                                <a href="#" class="btn-app-download w-100 justify-content-center py-4 fs-4">
+                                <a href="https://play.google.com/store/apps/details?id=com.doctorwala.dochealth&pcampaignid=web_share" class="btn-app-download w-100 justify-content-center py-4 fs-4">
                                     <i class="bi bi-play-fill me-3"></i> Download Patient App
                                 </a>
                             </div>
                             <div class="col-lg-7">
                                 <div class="carousel-track-wrapper">
-                                    <div class="carousel-track" style="animation-duration: 25s;">
+                                    <div class="carousel-track" style="animation-duration: 45s;">
                                         @for($i = 1; $i <= 29; $i++)
                                         <div class="app-ss-card-new"><img src="{{asset('img/products/da'.$i.'.png')}}" alt="App SS" class="w-100 h-100 object-fit-cover"></div>
                                         @endfor
