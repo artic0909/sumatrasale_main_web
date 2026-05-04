@@ -20,7 +20,7 @@
 
 .main-mid-row{
   display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr !important;
+  grid-template-columns: 1fr !important;
 }
 
 .service-row{
@@ -64,8 +64,8 @@
 /* ====================Scrolling of Blogs===================================== */
 .scroll-container {
   position: relative;
-  min-height: 238px;
-  max-height: 238px;
+  min-height: 538px;
+  max-height: 538px;
   overflow: hidden;
 }
 

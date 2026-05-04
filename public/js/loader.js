@@ -1,11 +1,14 @@
 const loader = document.querySelector('.loader-container');
 function hideLoader() {
-  loader.style.opacity = '0';
-  loader.style.transition = 'opacity 0.5s';
-  setTimeout(() => {
-    loader.style.display = 'none';
-  }, 500);
+  if (loader) {
+    loader.style.opacity = '0';
+    loader.style.transition = 'opacity 0.3s ease-out';
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 300);
+  }
 }
 
-// Wait for the content to load
+// Hide when DOM is ready for a faster feel, but fallback to window.onload
+document.addEventListener('DOMContentLoaded', hideLoader);
 window.addEventListener('load', hideLoader);

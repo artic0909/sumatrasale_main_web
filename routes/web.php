@@ -20,6 +20,10 @@ use App\Http\Controllers\user\UserHomeController;
 use App\Http\Controllers\user\UserPrivacyPolicyController;
 use App\Http\Controllers\user\UserProjectController;
 use App\Http\Controllers\user\UserServiceController;
+
+// new website controllers
+use App\Http\Controllers\new\IndexController;
+
 use Illuminate\Support\Facades\Route;
 
 // Error page if any page not found
@@ -164,7 +168,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
 // =======================================================================================================================
 // User Routes ===========================================================================================================
 // =======================================================================================================================
-Route::get('/', [UserHomeController::class, 'index'])->name('user-home');
+Route::get('/', [IndexController::class, 'index'])->name('user-home');
+Route::get('/doctorwala', [IndexController::class, 'doctorwala'])->name('doctorwala');
+Route::get('/schoolwala', [IndexController::class, 'schoolwala'])->name('schoolwala');
 
 Route::get('/about', [UserAboutController::class, 'index'])->name('user-about');
 
