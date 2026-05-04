@@ -574,7 +574,7 @@
                 <!-- =============================Footer Section End====================================================================== -->
 
                 <!-- ====================================Fixed Shapes Start================================================================ -->
-                <img src="{{asset('./icon/8967136.webp')}}" class="fixed-robot" alt="" style="
+                <img src="{{asset('./img/rob.png')}}" class="fixed-robot" alt="" style="
               position: fixed;
               top: 80px;
               width: 300px;
