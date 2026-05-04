@@ -51,6 +51,17 @@ class IndexController extends Controller
     }
     public function schoolwala()
     {
-        return view('new.schoolwala');
+
+        $services = AdminServiceModel::inRandomOrder()->paginate(9);
+        $videos = AdminVideoDescModel::get();
+        $projects = AdminProjectModel::get();
+        $blogs = AdminBlogModel::get();
+        $spInfo = AdminSpecializedModel::inRandomOrder()->paginate(6);
+        $partners = AdminPartnerModel::get();
+        $nums = AdminNumbersModel::get();
+        $marquees = AdminMarqueeTextModel::get();
+        $faqs = AdminAboutFAQModel::get();
+
+        return view('new.schoolwala', compact('services', 'videos', 'projects', 'blogs', 'spInfo', 'partners', 'nums', 'marquees', 'faqs'));
     }
 }
