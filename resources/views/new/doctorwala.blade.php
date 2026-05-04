@@ -22,10 +22,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Font Awesome Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
     <!-- <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> -->
@@ -264,7 +262,7 @@
                 <div class="promo-container">
                     <div class="hero-row">
                         <!-- Left: Hero Intro -->
-                        <div class="doctorwala-hero-card shadow-sm border rounded-4 text-center text-lg-start">
+                        <div class="doctorwala-hero-card shadow-sm border rounded-4 text-center text-lg-start" style="justify-content: flex-start !important;">
                             <div class="mb-4">
                                 <img src="{{asset('img/products/doctorwala.png')}}" alt="Doctorwala Logo" width="130" class="img-fluid">
                             </div>
@@ -272,18 +270,89 @@
                             <p class="fs-5 text-secondary mb-5" style="text-align: justify; max-width: 90%; line-height: 1.7;">India's first unified healthcare platform designed to connect millions of patients with verified doctors, clinics, and pharmacies. We bridge the gap between healthcare providers and seekers with cutting-edge technology.</p>
                             
                             <div class="d-flex flex-wrap gap-4 justify-content-center justify-content-lg-start mb-5">
-                                <a href="https://www.doctorwala.info/" target="_blank" class="btn btn-visit px-5 py-3 fw-bold text-white rounded-pill shadow-sm fs-5">Visit Website <i class="fas fa-external-link-alt ms-2"></i></a>
+                                <a href="https://www.doctorwala.info/" target="_blank" class="btn bg-white border-2 border-primary clr-bl px-5 py-3 fw-bold rounded-pill shadow-sm fs-5 visit-btn-new">Visit Website <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                                 <a href="#" class="btn-app-download">
-                                    <i class="fab fa-google-play me-3 fa-lg"></i> Get it on Play Store
+                                    <i class="bi bi-play-fill me-3 fs-4"></i> Get it on Play Store
                                 </a>
                             </div>
 
-                            <div class="d-flex flex-wrap gap-4 justify-content-center justify-content-lg-start border-top pt-4">
-                                <div class="d-flex align-items-center fw-semibold"><i class="fas fa-check-circle text-success me-2"></i> Patient App</div>
-                                <div class="d-flex align-items-center fw-semibold"><i class="fas fa-check-circle text-success me-2"></i> Doctor App</div>
-                                <div class="d-flex align-items-center fw-semibold"><i class="fas fa-check-circle text-success me-2"></i> Clinic Management</div>
-                                <div class="d-flex align-items-center fw-semibold"><i class="fas fa-check-circle text-success me-2"></i> Health Records</div>
+                            <style>
+                                .visit-btn-new {
+                                    transition: all 0.3s;
+                                    border: 2px solid var(--bl) !important;
+                                }
+                                .visit-btn-new:hover {
+                                    background-color: var(--bl) !important;
+                                    color: white !important;
+                                }
+                            </style>
+
+                            <div class="d-flex flex-wrap gap-4 justify-content-center justify-content-lg-start border-top pt-4 mb-4">
+                                <div class="d-flex align-items-center fw-semibold"><img src="{{asset('./icon/doctor.png')}}" width="25" class="me-2" alt=""> Patient App</div>
+                                <div class="d-flex align-items-center fw-semibold"><img src="{{asset('./icon/technical-support.png')}}" width="25" class="me-2" alt=""> Doctor App</div>
+                                <div class="d-flex align-items-center fw-semibold"><img src="{{asset('./icon/location.png')}}" width="25" class="me-2" alt=""> Clinic Management</div>
+                                <div class="d-flex align-items-center fw-semibold"><img src="{{asset('./icon/services.png')}}" width="25" class="me-2" alt=""> Health Records</div>
                             </div>
+
+                            <!-- Additional Content Grid -->
+                            <div class="row g-4 text-start">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start gap-3 p-3 rounded-4 transition-hover" style="background: rgba(46, 74, 159, 0.03);">
+                                        <div class="icon-box bg-white shadow-sm rounded-3 p-2 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                            <i class="bi bi-patch-check-fill text-primary fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold clr-bl mb-1">Verified Network</h6>
+                                            <p class="small text-secondary m-0" style="font-size: 0.85rem;">Connecting you with 5000+ certified doctors and verified clinics across India.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start gap-3 p-3 rounded-4 transition-hover" style="background: rgba(46, 74, 159, 0.03);">
+                                        <div class="icon-box bg-white shadow-sm rounded-3 p-2 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                            <i class="bi bi-shield-lock-fill text-primary fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold clr-bl mb-1">Secure Records</h6>
+                                            <p class="small text-secondary m-0" style="font-size: 0.85rem;">Your medical history is encrypted and accessible only to you and your doctor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start gap-3 p-3 rounded-4 transition-hover" style="background: rgba(46, 74, 159, 0.03);">
+                                        <div class="icon-box bg-white shadow-sm rounded-3 p-2 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                            <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold clr-bl mb-1">Hyper-Local Search</h6>
+                                            <p class="small text-secondary m-0" style="font-size: 0.85rem;">Find the nearest medical shops and diagnostic centers in just a few taps.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start gap-3 p-3 rounded-4 transition-hover" style="background: rgba(46, 74, 159, 0.03);">
+                                        <div class="icon-box bg-white shadow-sm rounded-3 p-2 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                            <i class="bi bi-headset text-primary fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold clr-bl mb-1">24/7 Priority Help</h6>
+                                            <p class="small text-secondary m-0" style="font-size: 0.85rem;">Our dedicated support team is always ready to assist with your medical bookings.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <style>
+                                .transition-hover {
+                                    transition: all 0.3s ease;
+                                    border: 1px solid transparent;
+                                }
+                                .transition-hover:hover {
+                                    background: rgba(46, 74, 159, 0.08) !important;
+                                    border-color: rgba(46, 74, 159, 0.1);
+                                    transform: translateY(-2px);
+                                }
+                            </style>
                         </div>
 
                         <!-- Right: Video Section (Reels Type) -->
@@ -334,12 +403,12 @@
                         </div>
                         <div class="carousel-track-wrapper">
                             <div class="carousel-track">
-                                @for($i = 1; $i <= 4; $i++)
-                                <div class="web-ss-card"><img src="{{asset('img/products/doc-web-'.$i.'.png')}}" alt="Web SS" class="w-100 h-100 object-fit-cover"></div>
-                                @endfor
-                                @for($i = 1; $i <= 4; $i++)
-                                <div class="web-ss-card"><img src="{{asset('img/products/doc-web-'.$i.'.png')}}" alt="Web SS" class="w-100 h-100 object-fit-cover"></div>
-                                @endfor
+                                @foreach([1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19] as $i)
+                                <div class="web-ss-card"><img src="{{asset('img/products/d'.$i.'.png')}}" alt="Web SS" class="w-100 h-100 object-fit-cover"></div>
+                                @endforeach
+                                @foreach([1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19] as $i)
+                                <div class="web-ss-card"><img src="{{asset('img/products/d'.$i.'.png')}}" alt="Web SS" class="w-100 h-100 object-fit-cover"></div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -351,23 +420,23 @@
                                 <h2 class="fw-bold clr-bl mb-4" style="font-size: 3rem;">Health in Your <span class="text-primary">Pocket</span></h2>
                                 <p class="text-secondary mb-5 fs-5">The Doctorwala mobile app provides instant access to verified healthcare services. Manage your life with ease.</p>
                                 <div class="features-list mb-5">
-                                    <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-success bg-opacity-10 rounded-circle me-3"><i class="fas fa-check text-success"></i></div> Book Appointments Instantly</div>
-                                    <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-success bg-opacity-10 rounded-circle me-3"><i class="fas fa-check text-success"></i></div> Universal Medical ID Card</div>
-                                    <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-success bg-opacity-10 rounded-circle me-3"><i class="fas fa-check text-success"></i></div> Digital Prescription Storage</div>
-                                    <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-success bg-opacity-10 rounded-circle me-3"><i class="fas fa-check text-success"></i></div> 24/7 Priority Support</div>
+                                    <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-primary bg-opacity-10 rounded-circle me-3"><i class="bi bi-calendar-check text-primary"></i></div> Book Appointments Instantly</div>
+                                    <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-primary bg-opacity-10 rounded-circle me-3"><i class="bi bi-person-badge text-primary"></i></div> Universal Medical ID Card</div>
+                                    <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-primary bg-opacity-10 rounded-circle me-3"><i class="bi bi-file-earmark-medical text-primary"></i></div> Digital Prescription Storage</div>
+                                    <div class="d-flex align-items-center mb-4 fs-5"><div class="p-2 bg-primary bg-opacity-10 rounded-circle me-3"><i class="bi bi-headset text-primary"></i></div> 24/7 Priority Support</div>
                                 </div>
                                 <a href="#" class="btn-app-download w-100 justify-content-center py-4 fs-4">
-                                    <i class="fab fa-google-play me-3"></i> Download Patient App
+                                    <i class="bi bi-play-fill me-3"></i> Download Patient App
                                 </a>
                             </div>
                             <div class="col-lg-7">
                                 <div class="carousel-track-wrapper">
                                     <div class="carousel-track" style="animation-duration: 25s;">
-                                        @for($i = 1; $i <= 4; $i++)
-                                        <div class="app-ss-card-new"><img src="{{asset('img/products/doc-app-'.$i.'.png')}}" alt="App SS" class="w-100 h-100 object-fit-cover"></div>
+                                        @for($i = 1; $i <= 29; $i++)
+                                        <div class="app-ss-card-new"><img src="{{asset('img/products/da'.$i.'.png')}}" alt="App SS" class="w-100 h-100 object-fit-cover"></div>
                                         @endfor
-                                        @for($i = 1; $i <= 4; $i++)
-                                        <div class="app-ss-card-new"><img src="{{asset('img/products/doc-app-'.$i.'.png')}}" alt="App SS" class="w-100 h-100 object-fit-cover"></div>
+                                        @for($i = 1; $i <= 8; $i++)
+                                        <div class="app-ss-card-new"><img src="{{asset('img/products/da'.$i.'.png')}}" alt="App SS" class="w-100 h-100 object-fit-cover"></div>
                                         @endfor
                                     </div>
                                 </div>
@@ -384,9 +453,24 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="d-flex justify-content-center justify-content-md-end gap-5">
-                                    <div class="text-center"><img src="{{asset('./icon/location.png')}}" width="60" alt="" class="mb-2 shadow-sm rounded-circle"><br><span class="fw-bold">Reachable</span></div>
-                                    <div class="text-center"><img src="{{asset('./icon/call.png')}}" width="60" alt="" class="mb-2 shadow-sm rounded-circle"><br><span class="fw-bold">Reliable</span></div>
-                                    <div class="text-center"><img src="{{asset('./icon/technical-support.png')}}" width="60" alt="" class="mb-2 shadow-sm rounded-circle"><br><span class="fw-bold">Timely</span></div>
+                                    <div class="text-center">
+                                        <div class="bg-white p-3 rounded-circle shadow-sm mb-2" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                            <i class="bi bi-geo-alt fs-1 text-primary"></i>
+                                        </div>
+                                        <span class="fw-bold">Reachable</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="bg-white p-3 rounded-circle shadow-sm mb-2" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                            <i class="bi bi-shield-check fs-1 text-primary"></i>
+                                        </div>
+                                        <span class="fw-bold">Reliable</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="bg-white p-3 rounded-circle shadow-sm mb-2" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                            <i class="bi bi-clock-history fs-1 text-primary"></i>
+                                        </div>
+                                        <span class="fw-bold">Timely</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
