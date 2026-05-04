@@ -58,14 +58,21 @@
             transform: translateY(-2px);
         }
         
-        body {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
             background-color: #fffaf0;
-            overflow-x: hidden;
+            overflow-x: hidden !important;
+            width: 100% !important;
+            position: relative;
         }
         .container {
             max-width: 1400px !important;
+        }
+        /* Reset any previous service-row grid for this page */
+        .service-row {
+            display: block !important;
+            width: 100% !important;
         }
         .promo-container {
             margin-top: 2rem;
@@ -193,11 +200,11 @@
             pointer-events: none;
             z-index: -1;
             overflow: hidden;
-            opacity: 0.4;
+            opacity: 0.2; /* Lowered global opacity */
         }
         .school-icon {
             position: absolute;
-            color: rgba(255, 154, 0, 0.1);
+            color: rgba(255, 154, 0, 0.05); /* Very faint icons for readability */
             animation: schoolFloat 20s infinite ease-in-out;
         }
         @keyframes schoolFloat {
@@ -205,9 +212,75 @@
             50% { transform: translateY(-40px) rotate(15deg); }
         }
 
+        @media (max-width: 1200px) {
+            .hero-row { grid-template-columns: 7fr 5fr; }
+            .schoolwala-hero-card { padding: 3rem; }
+        }
+
         @media (max-width: 991px) {
-            .hero-row { grid-template-columns: 1fr; }
-            .schoolwala-hero-card { padding: 2.5rem; }
+            .hero-row { 
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .schoolwala-hero-card { 
+                padding: 2rem;
+                text-align: center !important;
+            }
+            .schoolwala-hero-card h1 { 
+                font-size: 2.5rem !important; 
+            }
+            .schoolwala-hero-card p {
+                max-width: 100% !important;
+                margin-bottom: 2rem !important;
+            }
+            .video-section-col {
+                width: 100% !important;
+            }
+            .video-fixed-section {
+                position: relative !important;
+                width: 100% !important;
+            }
+            .carousel-track {
+                gap: 15px;
+            }
+            .web-ss-card {
+                width: 300px;
+                height: 180px;
+            }
+            .app-ss-card-new {
+                width: 180px;
+                height: 360px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-brand span {
+                font-size: 1.1rem !important;
+            }
+            .schoolwala-hero-card h1 {
+                font-size: 1.8rem !important;
+            }
+            .promo-container {
+                padding: 0 5px;
+            }
+            .shadow-sm.p-5 {
+                padding: 1.2rem !important;
+            }
+            .fixed-robot {
+                width: 120px !important;
+                top: 15% !important;
+                opacity: 1 !important;
+                pointer-events: none;
+            }
+            .fixed-shape {
+                width: 60px !important;
+                bottom: 50px !important;
+                opacity: 1 !important;
+            }
+            .btn-app-download {
+                font-size: 0.9rem !important;
+                padding: 12px 20px !important;
+            }
         }
     </style>
 </head>
