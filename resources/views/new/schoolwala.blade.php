@@ -58,13 +58,12 @@
             transform: translateY(-2px);
         }
         
-        html, body {
-            margin: 0 !important;
-            padding: 0 !important;
+        body {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
             background-color: #fffaf0;
             overflow-x: hidden !important;
             width: 100% !important;
-            position: relative;
         }
         .container {
             max-width: 1400px !important;
@@ -295,7 +294,7 @@
         <div class="row">
             <div class="col-12">
                 <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container shadow border p-3">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container sticky-top shadow border p-3">
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="/">
                             <img src="{{asset('./sumatra2.png')}}" alt="Sumatra Sales Logo" class="me-2 nav-logo" width="80" />
@@ -549,9 +548,9 @@
                             </div>
                             <div class="col-6 text-end">
                                 <ul class="list-unstyled d-inline-flex gap-3 m-0">
-                                    <li><a href="/privacy-policy" class="text-decoration-none text-dark opacity-75">Privacy</a></li>
+                                    <!-- <li><a href="/privacy-policy" class="text-decoration-none text-dark opacity-75">Privacy</a></li>
                                     <li><a href="/services" class="text-decoration-none text-dark opacity-75">Services</a></li>
-                                    <li><a href="/contact" class="text-decoration-none text-dark opacity-75">Contact</a></li>
+                                    <li><a href="/contact" class="text-decoration-none text-dark opacity-75">Contact</a></li> -->
                                 </ul>
                             </div>
                         </div>

@@ -71,7 +71,7 @@
 
 
                 <!-- Navbar Start===================================================-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container shadow border p-3">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container sticky-top shadow border p-3">
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="/">
                             <img src="{{asset('./sumatra2.png')}}" alt="Sumatra Sales Logo" class="me-2 nav-logo" width="80" />
@@ -105,11 +105,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/blogs"><img class="nav-img"
                                             src="{{asset('./icon/blogs.png')}}" width="20" alt="" />&nbsp;<span>Blogs</span></a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold hide inner-items-center" aria-current="page" href="/contact"><img class="nav-img"
-                                            src="{{asset('./icon/contactus.png')}}" width="23" alt="" />&nbsp;<span>Contact</span></a>
                                 </li>
 
                                 <li class="nav-item btn-org">
@@ -638,7 +633,7 @@
                             <div class="col-6">
                                 <div class="footer-links">
                                     <ul class="footer-ul d-flex justify-content-end align-items-center gap-3">
-                                        <li>
+                                        <!-- <li>
                                             <a href="/privacy-policy" style="
                             text-decoration: none;
                             color: black;
@@ -658,7 +653,7 @@
                             color: black;
                             opacity: 0.75;
                           ">Contact</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>

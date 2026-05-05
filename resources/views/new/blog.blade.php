@@ -46,13 +46,99 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Font Awesome Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
-    <!-- <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> -->
+    <style>
+        .blog-card {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .blog-img-wrapper {
+            height: 200px;
+            overflow: hidden;
+        }
+        .blog-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .blog-card:hover .blog-img-wrapper img {
+            transform: scale(1.1);
+        }
+        .blog-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #333;
+            margin-bottom: 0.75rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.4;
+        }
+        .blog-text {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.6;
+        }
+        .blog-footer {
+            margin-top: auto;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pagination .page-link {
+            border-radius: 10px;
+            margin: 0 5px;
+            border: none;
+            color: #333;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .pagination .page-item.active .page-link {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .pagination .page-link:hover {
+            background-color: #eee;
+        }
+        .section-tag {
+            background: rgba(255, 77, 77, 0.1);
+            color: #ff4d4d;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    </style>
 
 </head>
 
@@ -68,12 +154,8 @@
         <div class="row">
             <div class="col-12">
 
-
-
-
-
                 <!-- Navbar Start===================================================-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container shadow border p-3">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container sticky-top shadow border p-3">
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="/">
                             <img src="{{asset('./sumatra2.png')}}" alt="Sumatra Sales Logo" class="me-2 nav-logo" width="80" />
@@ -89,45 +171,28 @@
 
                         <div class="collapse navbar-collapse" id="navbarDefault">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 align-items-center">
+                               <li class="nav-item">
+                                    <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page"
+                                        href="/doctorwala"><img class="nav-img" src="{{asset('./icon/doctor.png')}}" width="19" alt="Doctorwala Icon" />&nbsp;<span>Doctorwala</span></a>
+                                </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page"
-                                        href="/"><img class="nav-img" src="{{asset('./icon/home.png')}}" width="19"
-                                            alt="" />&nbsp;<span>Home</span></a>
+                                        href="/schoolwala"><img class="nav-img" src="{{asset('./icon/graduation.png')}}" width="19" alt="Schoolwala Icon" />&nbsp;<span>Schoolwala</span></a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="/about"><img class="nav-img" src="{{asset('./icon/about.png')}}" width="19"
-                                            alt="" />&nbsp;<span>About</span></a>
+                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/about"><img class="nav-img"
+                                            src="{{asset('./icon/about.png')}}" width="19" alt="About Icon" />&nbsp;<span>About</span></a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="/services"><img class="nav-img" src="{{asset('./icon/services.png')}}" width="22"
-                                            alt="" />&nbsp;<span>Services</span></a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="/projects"><img class="nav-img" src="{{asset('./icon/projects.png')}}" width="18"
-                                            alt="" />&nbsp;<span>Projects</span></a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" id="active-nav"
-                                        href="/blogs"><img class="nav-img" src="{{asset('./icon/blogs.png')}}" width="20"
-                                            alt="" />&nbsp;<span>Blogs</span></a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold hide inner-items-center" aria-current="page"
-                                        href="/contact"><img class="nav-img" src="{{asset('./icon/contactus.png')}}" width="23"
-                                            alt="" />&nbsp;<span>Contact</span></a>
+                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/blogs" id="active-nav"><img class="nav-img"
+                                            src="{{asset('./icon/blogs.png')}}" width="20" alt="" />&nbsp;<span>Blogs</span></a>
                                 </li>
 
                                 <li class="nav-item btn-org">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="mailto:sumatra.sales2424@gmail.com">Let's Talk &nbsp;
+                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="mailto:sumatra.sales2424@gmail.com">Let's Talk &nbsp;
                                         <img class="nav-img hide" src="{{asset('./icon/arrow-talk.png')}}" width="15" alt="" /></a>
                                 </li>
                             </ul>
@@ -137,144 +202,47 @@
                 <!-- Navbar End======================================================-->
 
 
-
-
-
-                <!-- Service + Video start========================================================================================== -->
-                <div class="row service2-row">
-
-
-
-
-
-                    <!-- Services Section Start======================================================-->
-                    <section class="main-section col-8 mt-4">
-                        <div class="shadow border p-4">
-                            <div>
-                                <!-- Title Section -->
-                                <p class="fw-bold fs-3">
-                                    <span class="fs-3">Our Latest <span class="clr-org">Blogs & Articles</span></span>
-                                </p>
-
-                                <!-- Short Intro Section -->
-                                <p class="fs-6" style="text-align: justify; opacity: 0.75">
-                                    <strong>If you're looking for a creative partner to transform your ideas into
-                                        reality or a design expert to elevate your business, Sumatra Sales is here
-                                        for🤝🧡</strong>
-                                </p>
-
-                                <!-- Services============================ -->
-                                <div class="infoo">
-
-                                    <div class="blogs-container gap-3" style="padding: 16px;">
-
-                                        <!-- card 1 -->
-                                        @foreach($blogs as $blog)
-                                        <div class="p-4 pb-2 mb-4 blog-item"
-                                            style="background: #cecdd891; border-radius: 15px">
-                                            <div style="border-radius: 10px"
-                                                class="img-container3 bg-white p-3 d-flex justify-content-center align-items-center">
-                                                <img class="project-img img-fluid" src="{{ asset('storage/' . $blog->image) }}" alt="" />
-                                            </div>
-
-                                            <div class="card-content mt-4">
-                                                <p class="fw-bold m-0 fs-5">{{ $blog->title }}</p>
-
-
-
-                                                <p class="m-0 fs-6 project-category opacity-75 mt-2"
-                                                    style="text-align: justify">
-                                                    {!! Str::limit($blog->desc, 130, '........') !!}
-                                                </p>
-
-                                                <div
-                                                    class="buttonss d-flex align-items-center justify-content-center mt-4 mb-2">
-                                                    <a href="{{ url('/blog-details/' . $blog->slug) }}" class="btn btn-danger3" style="font-size: 0.8rem;">
-                                                        Date: {{ $blog->date }} By-SSPL GROUPS
-                                                        <img src="{{asset('./icon/arrow-talk.png')}}" width="10" alt="" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        @endforeach
-
-                                    </div>
-                                </div>
-
-
-                                <!-- Pagination -->
-                                <div class="d-flex justify-content-center gap-2 mt-4 pagination">
-                                    @if ($blogs->onFirstPage())
-                                    <span class="btn btn-secondary disabled">Prev</span>
-                                    @else
-                                    <a href="{{ $blogs->previousPageUrl() }}" class="btn btn-danger prev">Prev</a>
-                                    @endif
-
-                                    @foreach ($blogs->getUrlRange(1, $blogs->lastPage()) as $page => $url)
-                                    <a href="{{ $url }}" class="btn {{ $page == $blogs->currentPage() ? 'btn-danger active' : 'btn-danger' }}">
-                                        {{ $page }}
-                                    </a>
-                                    @endforeach
-
-                                    @if ($blogs->hasMorePages())
-                                    <a href="{{ $blogs->nextPageUrl() }}" class="btn btn-danger next">Next</a>
-                                    @else
-                                    <span class="btn btn-secondary disabled">Next</span>
-                                    @endif
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Services Section End======================================================-->
-
-
-
-
-
-
-                    <!-- Fixed Section Start====================================================== -->
-                    <section class="video-fixed-section col-4 mt-4">
-                        <div class="shadow border p-3 video-fixed-section2 vfs-inner">
-                            <div style="border-radius: 10px"
-                                class="img-container bg-white pt-2 d-flex justify-content-center align-items-center">
-                                <video src="./Video/demoo.mp4" autoplay muted loop class="border video-part img-fluid"
-                                    style="border-radius: 15px"></video>
-                            </div>
-
-                            <div class="card-content mt-2 p-3">
-                                <p class="fw-bold fs-4 text-start m-0 video-title">
-                                    👋Welcome To <span class="clr-bl">Sumatra Sales</span>
-                                </p>
-                                @foreach ($videos as $video)
-                                <p class="fs-6 m-0 video-desc" style="text-align: justify">
-                                    {{ $video->desc }}
-                                </p>
-                                @endforeach
-                            </div>
-
-                            <div class="buttons video-buttons p-3 d-flex justify-content-between">
-                                @foreach($videos as $video)
-                                <a href="https://wa.me/{{ $video->contact }}" class="btn btn-danger btns-1 fw-semibold p-3 px-4"><img src="{{asset('./icon/whatsapp.png')}}" width="20"
-                                        alt="" />
-                                    Whatsapp</a>
-                                <a href="tel:{{ $video->contact }}" class="btn btn-org-01 btns-2 fw-semibold p-3 px-4"><img src="{{asset('./icon/call.png')}}" width="20"
-                                        alt="" /> Make a
-                                    Call</a>
-                                @endforeach
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Fixed Section End====================================================== -->
-
-
-
+                <!-- Header Section -->
+                <div class="text-center mt-5 mb-5">
+                    <span class="section-tag">Insights & Updates</span>
+                    <h1 class="fw-bold display-4">Our Latest <span class="clr-org">Blogs & Articles</span></h1>
+                    <p class="mx-auto mt-3 opacity-75 fs-5" style="max-width: 800px;">
+                        Explore our collection of expert insights, industry news, and success stories. Stay updated with the latest trends in marketing and technology.
+                    </p>
                 </div>
-                <!-- Service + Video End========================================================================================== -->
 
+                <!-- Blogs Grid Section -->
+                <div class="row g-4 mb-5">
+                    @foreach($blogs as $blog)
+                    <div class="col-md-4">
+                        <div class="card blog-card bg-white border">
+                            <div class="blog-img-wrapper">
+                                <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}">
+                            </div>
+                            <div class="blog-body">
+                                <h3 class="blog-title">{{ $blog->title }}</h3>
+                                <p class="blog-text">
+                                    {{ strip_tags($blog->desc) }}
+                                </p>
+                                <div class="blog-footer">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="bi bi-calendar3 text-danger"></i>
+                                        <span class="small text-muted">{{ $blog->date }}</span>
+                                    </div>
+                                    <a href="{{ route('blog.details', $blog->slug) }}" class="btn btn-outline-danger btn-sm rounded-pill px-3">
+                                        Read More <i class="bi bi-arrow-right small ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
 
-
-
-
+                <!-- Pagination Section -->
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                    {{ $blogs->links('pagination::bootstrap-5') }}
+                </div>
 
 
                 <!-- =============================Footer Section Start====================================================================== -->
@@ -294,7 +262,7 @@
                             <div class="col-6">
                                 <div class="footer-links">
                                     <ul class="footer-ul d-flex justify-content-end align-items-center gap-3">
-                                        <li>
+                                        <!-- <li>
                                             <a href="/privacy-policy" style="
                             text-decoration: none;
                             color: black;
@@ -314,7 +282,7 @@
                             color: black;
                             opacity: 0.75;
                           ">Contact</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -322,14 +290,6 @@
                     </div>
                 </footer>
                 <!-- =============================Footer Section End====================================================================== -->
-
-
-
-
-
-
-
-
 
                 <!-- ====================================Fixed Shapes Start================================================================ -->
                 <img src="{{asset('./icon/8967136.webp')}}" class="fixed-robot" alt="" style="

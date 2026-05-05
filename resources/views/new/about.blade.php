@@ -129,7 +129,7 @@
         <div class="row">
             <div class="col-12">
                 <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container shadow border p-3">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white navbar_container sticky-top shadow border p-3">
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="/">
                             <img src="{{asset('./sumatra2.png')}}" alt="Sumatra Sales Logo" class="me-2 nav-logo" width="80" />
@@ -332,9 +332,9 @@
                             </div>
                             <div class="col-md-6 text-center text-md-end">
                                 <ul class="list-unstyled d-inline-flex gap-4 m-0">
-                                    <li><a href="/privacy-policy" class="text-decoration-none text-dark opacity-75 fw-semibold">Privacy Policy</a></li>
+                                    <!-- <li><a href="/privacy-policy" class="text-decoration-none text-dark opacity-75 fw-semibold">Privacy Policy</a></li>
                                     <li><a href="/services" class="text-decoration-none text-dark opacity-75 fw-semibold">Our Services</a></li>
-                                    <li><a href="/contact" class="text-decoration-none text-dark opacity-75 fw-semibold">Contact Us</a></li>
+                                    <li><a href="/contact" class="text-decoration-none text-dark opacity-75 fw-semibold">Contact Us</a></li> -->
                                 </ul>
                             </div>
                         </div>

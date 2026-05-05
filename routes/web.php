@@ -178,13 +178,11 @@ Route::get('/services', [UserServiceController::class, 'index'])->name('user-ser
 
 Route::get('/projects', [UserProjectController::class, 'index'])->name('user-projects');
 
-Route::get('/blogs', [UserBlogController::class, 'index'])->name('user-blogs');
+Route::get('/blogs', [IndexController::class, 'blogs'])->name('user-blogs');
 
-Route::get('/blog-details/{id}', [UserBlogController::class, 'singleBlogDetails'])->name('blog.details');
+Route::get('/blog/{slug}', [IndexController::class, 'blogDetails'])->name('blog.details');
 
 Route::get('/contact', [UserContactController::class, 'index'])->name('user-contact');
-Route::post('/contact', [UserContactController::class, 'store'])->name('user-contact.store');
-
 Route::post('/contact', [UserContactController::class, 'store'])->name('user-contact.store');
 
 Route::get('/privacy-policy', [UserPrivacyPolicyController::class, 'index'])->name('user-privacy-policy');
