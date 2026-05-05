@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Schoolwala E-learning Platform | Sumatra Sales Pvt. Ltd.</title>
+    <title>Schoolwala E-learning | Premier WBBSE Bengali Medium Learning Platform</title>
 
     <!-- Primary Meta Tags -->
-    <meta name="description" content="Schoolwala is the leading e-learning platform for WBBSE Board students, providing Bengali medium animated lessons, Madhyamik preparation, and interactive quizzes." />
-    <meta name="keywords" content="WBBSE Board, Madhyamik Preparation, Bengali Medium E-learning, West Bengal Education, Schoolwala, Sumatra Sales Pvt Ltd" />
+    <meta name="title" content="Schoolwala E-learning | WBBSE Board Animated Lessons & Madhyamik Suggestions" />
+    <meta name="description" content="Schoolwala is the leading digital education platform for West Bengal Board (WBBSE) students. Get high-quality animated lessons, Madhyamik suggestion papers, and interactive quizzes in Bengali medium." />
+    <meta name="keywords" content="Schoolwala, WBBSE E-learning, Madhyamik Suggestions 2025, West Bengal Board Bengali Medium, Animated School Lessons, Online Classes WBBSE, Madhyamik Preparation App, Sumatra Sales Education" />
     <meta name="author" content="Sumatra Sales Pvt. Ltd." />
     <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
-    <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
@@ -28,14 +29,37 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:title" content="Schoolwala E-learning Platform | Sumatra Sales Pvt. Ltd." />
-    <meta property="og:description" content="Empowering the next generation with accessible and quality education resources for everyone, everywhere." />
-    <meta property="og:image" content="{{ asset('sumatra2.png') }}" />
+    <meta property="og:title" content="Schoolwala | Digital Education for West Bengal Students" />
+    <meta property="og:description" content="Empowering WBBSE students with premium animated content and expert guidance. Join Schoolwala today!" />
+    <meta property="og:image" content="{{ asset('img/products/Schoolwala.jpg') }}" />
     <meta property="og:site_name" content="Sumatra Sales" />
-    <meta property="og:locale" content="en_US" />
 
-    <!-- Canonical URL -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ url()->current() }}" />
+    <meta property="twitter:title" content="Schoolwala - The Future of Learning for West Bengal" />
+    <meta property="twitter:description" content="Quality education made accessible with Schoolwala's animated curriculum for WBBSE board." />
+    <meta property="twitter:image" content="{{ asset('img/products/Schoolwala.jpg') }}" />
+
+    <!-- Canonical & Icons -->
     <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="icon" type="image/jpg" href="{{ asset('img/products/Schoolwala.jpg') }}" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Schoolwala",
+      "url": "{{ url('/schoolwala') }}",
+      "logo": "{{ asset('img/products/Schoolwala.jpg') }}",
+      "description": "An innovative e-learning platform dedicated to providing high-quality Bengali medium education for WBBSE board students.",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Sumatra Sales Private Limited"
+      }
+    }
+    </script>
 
     <style>
         :root {

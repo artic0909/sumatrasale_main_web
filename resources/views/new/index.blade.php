@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumatra Sales Pvt. Ltd. | Transforming Healthcare & Education through Innovation</title>
+    <title>Sumatra Sales Pvt. Ltd. | Home of Doctorwala, Schoolwala & Graphicode India</title>
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Sumatra Sales Pvt. Ltd. | Leading Digital Innovation in Healthcare & Education" />
-    <meta name="description" content="Sumatra Sales Pvt. Ltd. is a premier technology firm in India, powering the Doctorwala Medical Ecosystem and Schoolwala E-learning platform. We deliver cutting-edge software solutions, healthcare IT, and digital education tools to empower millions." />
-    <meta name="keywords" content="Sumatra Sales Pvt Ltd, Doctorwala Medical Ecosystem, Schoolwala E-learning, Healthcare IT Solutions India, WBBSE Digital Education, Madhyamik Preparation App, Digital Health Records India, Software Development Howrah, EdTech Startups India" />
+    <meta name="title" content="Sumatra Sales | Doctorwala, Schoolwala & Graphicode India" />
+    <meta name="description" content="Sumatra Sales Pvt. Ltd. drives digital transformation in India through three core pillars: Doctorwala Medical Ecosystem, Schoolwala E-learning, and Graphicode India Software Solutions." />
+    <meta name="keywords" content="Doctorwala, Schoolwala, Graphicode India, Sumatra Sales Pvt Ltd, Healthcare IT Solutions, WBBSE E-learning Bengali, Software Development India, Digital Education West Bengal, Medical ID Card India" />
     <meta name="author" content="Sumatra Sales Pvt. Ltd." />
     <meta name="language" content="English" />
     <meta name="geo.region" content="IN-WB" />
@@ -76,7 +76,7 @@
         "https://twitter.com/SumatraSales",
         "https://www.linkedin.com/company/sumatra-sales"
       ],
-      "description": "Sumatra Sales Pvt. Ltd. is a leading digital innovation company in India, specializing in healthcare and education technology through platforms like Doctorwala and Schoolwala."
+      "description": "Sumatra Sales Pvt. Ltd. is a multi-sector technology firm specializing in healthcare (Doctorwala), education (Schoolwala), and high-end software development (Graphicode India)."
     }
     </script>
 
@@ -418,7 +418,7 @@
                             <div class="card-content mt-2" style="padding: 16px;">
                                 @foreach($videos as $video)
                                 <h1 class="fw-bold fs-3 text-start m-0 video-title mb-2">
-                                    Revolutionizing <span class="clr-bl">India's Digital Landscape</span>
+                                    Hey I'm <span class="clr-bl">Graphicode India</span>
                                 </h1>
                                 <p class="fs-6 m-0 video-desc" style="text-align: justify; opacity: 0.85;">
                                     {{ $video->desc }}

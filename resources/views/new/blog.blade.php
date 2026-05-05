@@ -17,10 +17,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title" content="Sumatra Sales Blog | Insights on Doctorwala, Schoolwala & Digital Innovation" />
+    <meta property="og:description" content="Stay updated with the latest trends in healthcare IT, e-learning, and software development. Read insights from the creators of Doctorwala and Schoolwala." />
+    <meta property="og:image" content="{{ asset('sumatra2.png') }}" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Sumatra Sales Blogs & Articles" />
-    <meta name="twitter:description" content="Explore blogs from Sumatra Sales Pvt. Ltd. on marketing, software, and business growth including: {{ $blogTitles }}." />
-    <meta name="twitter:image" content="{{ asset('img/blogs-og-image.jpg') }}" />
+    <meta name="twitter:description" content="Explore our collection of expert insights, industry news, and success stories in healthcare and education technology." />
+    <meta name="twitter:image" content="{{ asset('sumatra2.png') }}" />
 
     <!-- Canonical -->
     <link rel="canonical" href="{{ url()->current() }}" />

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Sumatra Sales Private Limited - Driving Digital Excellence</title>
+    <title>About Us | Sumatra Sales - The Visionaries Behind Doctorwala & Schoolwala</title>
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="About Sumatra Sales | Mission, Vision & Innovation in India" />
-    <meta name="description" content="Discover the story of Sumatra Sales Private Limited. Learn about our mission to revolutionize healthcare and education in India through Doctorwala and Schoolwala platforms." />
-    <meta name="keywords" content="About Sumatra Sales, Technology Company Howrah, Digital Innovation India, Healthcare EdTech Founder, Sumatra Sales Mission, Doctorwala Vision, Schoolwala Goals" />
+    <meta name="title" content="Sumatra Sales | Experts in Healthcare, Education & Software" />
+    <meta name="description" content="Meet Sumatra Sales Private Limited, the innovative force powering Doctorwala, Schoolwala, and Graphicode India. We are dedicated to creating impactful digital solutions for India." />
+    <meta name="keywords" content="About Sumatra Sales, Doctorwala, Schoolwala, Graphicode India, Healthcare IT Founders, EdTech Innovation India, Software Excellence West Bengal" />
     <meta name="author" content="Sumatra Sales Pvt. Ltd." />
     <meta name="robots" content="index, follow" />
 
@@ -32,7 +32,7 @@
       "mainEntity": {
         "@type": "Organization",
         "name": "Sumatra Sales Private Limited",
-        "description": "Sumatra Sales is a pioneering technology company focusing on Healthcare and Education through its platforms Doctorwala and Schoolwala.",
+        "description": "Sumatra Sales is a pioneering technology company specializing in Healthcare (Doctorwala), Education (Schoolwala), and Software Solutions (Graphicode India).",
         "foundingDate": "2024",
         "location": {
           "@type": "Place",
