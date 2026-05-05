@@ -389,7 +389,7 @@
                             <div class="card-content mt-2" style="padding: 16px;">
                                 @foreach($videos as $video)
                                 <h1 class="fw-bold fs-4 text-start m-0 video-title">
-                                    <span class="clr-bl">Sumatra Sales Pvt. Ltd.</span>
+                                    Hey, I'm <span class="clr-bl">Graphicode India</span>
                                 </h1>
                                 <p class="fs-6 m-0 video-desc" style="text-align: justify">
                                     {{ $video->desc }}
