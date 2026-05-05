@@ -426,7 +426,7 @@
                                     <div style="border-radius: 15px; overflow: hidden;" class="img-container bg-black shadow-sm">
                                         <iframe 
                                             width="100%" 
-                                            src="https://www.youtube.com/embed/s8kW-jRzNmM?autoplay=1&mute=1&loop=1&playlist=s8kW-jRzNmM&controls=0&modestbranding=1" 
+                                            src="https://www.youtube.com/embed/s8kW-jRzNmM?autoplay=1&mute=0&loop=1&playlist=s8kW-jRzNmM&controls=0&modestbranding=1" 
                                             title="YouTube video player" 
                                             frameborder="0" 
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 

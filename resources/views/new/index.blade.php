@@ -481,8 +481,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="ss-container rounded-3 border mb-3">
-                                            <img src="{{asset('img/proj-1.png')}}" alt="Graphicode Project" class="w-100 hover-img">
+                                        <div class="ss-container rounded-3 border mb-3 overflow-hidden" style="height: 180px;">
+                                            <video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+                                                <source src="{{asset('Video/demoo.mp4')}}" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
                                         </div>
                                     </div>
 
