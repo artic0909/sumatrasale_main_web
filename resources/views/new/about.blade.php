@@ -216,7 +216,7 @@
                             </p>
                             <div class="row g-4 text-center text-lg-start">
                                 <div class="col-md-4">
-                                    <div class="stat-number clr-bl">10+</div>
+                                    <div class="stat-number clr-bl">60+</div>
                                     <div class="text-secondary fw-bold">Major Projects</div>
                                 </div>
                                 <div class="col-md-4">
