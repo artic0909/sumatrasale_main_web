@@ -21,6 +21,73 @@
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
     <link rel="stylesheet" href="{{asset('./responsive/home-responsive.css')}}" />
+    <link rel="stylesheet" href="{{asset('./responsive/about-responsive.css')}}" />
+
+    <style>
+        .blog-card-new {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .blog-card-new:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .blog-img-wrapper {
+            height: 200px;
+            overflow: hidden;
+        }
+        .blog-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .blog-card-new:hover .blog-img-wrapper img {
+            transform: scale(1.1);
+        }
+        .blog-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #333;
+            margin-bottom: 0.75rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.4;
+        }
+        .blog-text {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.6;
+        }
+        .blog-footer {
+            margin-top: auto;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
 
     <!-- Bootstrap Links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -458,45 +525,40 @@
                 <div class="main-mid-row gap-3">
                     <!-- Blogs Start======================================================================================================== -->
                     <section class="main-section mt-4">
-                        <div class="shadow border p-3">
-                            <div class="inner-items-center">
-                                <h2 class="fw-bold fs-4 service-title-text col-6">Latest Blogs</h2>
-                                <a href="/blogs" class="fw-bold fs-6 col-6 clr-bl text-end" style="cursor: pointer; text-decoration: none;">
+                        <div class="shadow border p-3 rounded-4 bg-white">
+                            <div class="d-flex align-items-center justify-content-between mb-4 px-2">
+                                <h2 class="fw-bold fs-4 service-title-text m-0">Latest Blogs</h2>
+                                <a href="/blogs" class="fw-bold fs-6 clr-bl text-decoration-none d-flex align-items-center gap-2">
                                     See All
-                                    <img src="{{asset('./icon/arrow.png')}}" alt="" width="20" />
+                                    <i class="bi bi-arrow-right fs-5"></i>
                                 </a>
                             </div>
 
-                            <div class="scroll-container">
-                                <div class="scroll-lists">
-                                    <!-- Repeat the .lists-item as needed -->
-                                    @foreach($blogs as $blog)
-                                    <div class="lists-item blog-card d-flex align-items-center justify-content-between p-4 mb-4 border rounded-4 shadow-sm">
-                                        <div class="d-flex align-items-center gap-4 flex-grow-1">
-                                            <div class="blog-img-container rounded-4 overflow-hidden border shadow-sm">
-                                                <img src="{{ asset('storage/' . $blog->image) }}" class="w-100 h-100" style="object-fit: cover;" alt="{{ $blog->title }}" />
-                                            </div>
-                                            <div class="blog-text-content">
-                                                <h5 class="fw-bold blog-title-text mb-1">
-                                                    {{ $blog->title }}
-                                                </h5>
-                                                <p class="blog-desc-text mb-2">
-                                                    {{ strip_tags($blog->desc) }}
-                                                </p>
-                                                <p class="m-0 text-secondary small d-flex align-items-center fw-semibold">
-                                                    <i class="far fa-calendar-alt me-2 text-primary"></i> {{ $blog->date }}
-                                                </p>
-                                            </div>
+                            <div class="row g-4">
+                                @foreach($blogs->take(3) as $blog)
+                                <div class="col-md-4">
+                                    <div class="card blog-card-new bg-white border">
+                                        <div class="blog-img-wrapper">
+                                            <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}">
                                         </div>
-                                        <div class="buttons ms-3">
-                                            <a href="{{ url('/blog-details/' . $blog->title) }}" class="btn btn-view-blog text-white fw-bold shadow-sm">
-                                                Continue
-                                            </a>
+                                        <div class="blog-body">
+                                            <h3 class="blog-title">{{ $blog->title }}</h3>
+                                            <p class="blog-text">
+                                                {{ Str::limit(strip_tags($blog->desc), 120) }}
+                                            </p>
+                                            <div class="blog-footer">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <i class="bi bi-calendar3 text-danger small"></i>
+                                                    <span class="small text-muted">{{ $blog->date }}</span>
+                                                </div>
+                                                <a href="{{ route('blog.details', $blog->slug) }}" class="btn btn-outline-danger btn-sm rounded-pill px-3 fw-bold">
+                                                    Read More
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    @endforeach
-
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                     </section>
