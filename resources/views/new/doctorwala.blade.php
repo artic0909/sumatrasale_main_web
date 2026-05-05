@@ -105,11 +105,6 @@
                                             src="{{asset('./icon/blogs.png')}}" width="20" alt="" />&nbsp;<span>Blogs</span></a>
                                 </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold hide inner-items-center" aria-current="page" href="/contact"><img class="nav-img"
-                                            src="{{asset('./icon/contactus.png')}}" width="23" alt="" />&nbsp;<span>Contact</span></a>
-                                </li>
-
                                 <li class="nav-item btn-org">
                                     <a class="nav-link fw-bold inner-items-center" aria-current="page" href="mailto:sumatra.sales2424@gmail.com">Let's Talk &nbsp;
                                         <img class="nav-img hide" src="{{asset('./icon/arrow-talk.png')}}" width="15" alt="" /></a>

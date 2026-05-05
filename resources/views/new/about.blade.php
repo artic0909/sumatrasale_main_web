@@ -147,10 +147,19 @@
                                 <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center text-secondary" href="/schoolwala"><img class="nav-img" src="{{asset('./icon/graduation.png')}}" width="19" />&nbsp;<span>Schoolwala</span></a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link fw-bold" id="active-nav" href="/about">About</a></li>
-                                <li class="nav-item"><a class="nav-link fw-bold" href="/blogs">Blogs</a></li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link fw-bold inner-items-center text-secondary" id="active-nav" aria-current="page" href="/about"><img class="nav-img"
+                                            src="{{asset('./icon/about.png')}}" width="19" alt="About Icon" />&nbsp;<span>About</span></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page" href="/blogs"><img class="nav-img"
+                                            src="{{asset('./icon/blogs.png')}}" width="20" alt="" />&nbsp;<span>Blogs</span></a>
+                                </li>
+
                                 <li class="nav-item btn-org">
-                                    <a class="nav-link fw-bold text-white" href="mailto:sumatra.sales2424@gmail.com">Let's Talk</a>
+                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="mailto:sumatra.sales2424@gmail.com">Let's Talk &nbsp;
+                                        <img class="nav-img hide" src="{{asset('./icon/arrow-talk.png')}}" width="15" alt="" /></a>
                                 </li>
                             </ul>
                         </div>
