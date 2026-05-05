@@ -5,28 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Page Title -->
-    <title>Blogs & Articles | Sumatra Sales Pvt. Ltd.</title>
-
-    <!-- Dynamic Meta Description (includes first 3 blog titles) -->
-    @php
-    $blogTitles = $blogs->take(3)->pluck('title')->implode(', ');
-    @endphp
-    <meta name="description" content="Explore the latest blogs and articles from Sumatra Sales Pvt. Ltd. on marketing, software solutions, design, and business growth including: {{ $blogTitles }}." />
-
-    <!-- Meta Keywords -->
-    <meta name="keywords" content="Sumatra Sales Blogs, Marketing, Software, Design, Business Growth, {{ $blogTitles }}" />
-
-    <!-- Author -->
+    <title>Blog | Sumatra Sales - Latest Insights in Tech, Health & Education</title>
+ 
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Sumatra Sales Blog | Insights on Doctorwala, Schoolwala & Digital Innovation" />
+    <meta name="description" content="Stay updated with the latest trends in healthcare IT, e-learning, and software development. Read insights and stories from the creators of Doctorwala and Schoolwala." />
+    <meta name="keywords" content="Sumatra Sales Blog, Healthcare IT News India, E-learning Trends, Doctorwala Updates, Schoolwala Insights, Technology Blog West Bengal" />
     <meta name="author" content="Sumatra Sales Pvt. Ltd." />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Sumatra Sales Blogs & Articles" />
-    <meta property="og:description" content="Stay updated with blogs from Sumatra Sales Pvt. Ltd. covering marketing strategies, software solutions, and business growth tips including: {{ $blogTitles }}." />
+    <meta name="robots" content="index, follow" />
+ 
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:image" content="{{ asset('img/blogs-og-image.jpg') }}" />
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Sumatra Sales Blogs & Articles" />
     <meta name="twitter:description" content="Explore blogs from Sumatra Sales Pvt. Ltd. on marketing, software, and business growth including: {{ $blogTitles }}." />

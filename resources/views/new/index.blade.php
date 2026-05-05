@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumatra Sales Pvt. Ltd. | Doctorwala Medical Ecosystem & Schoolwala E-learning Platform</title>
+    <title>Sumatra Sales Pvt. Ltd. | Transforming Healthcare & Education through Innovation</title>
 
     <!-- Primary Meta Tags -->
-    <meta name="description" content="Sumatra Sales Pvt. Ltd. | Leading Digital Innovation with Doctorwala Medical Ecosystem and Schoolwala E-learning Platform. Specializing in Healthcare IT, EdTech, and Custom Software Solutions in India." />
-    <meta name="keywords" content="Sumatra Sales Pvt Ltd, Doctorwala Medical Ecosystem, Schoolwala E-learning Platform, Healthcare IT India, Digital Education Platform, Doctorwala App, Schoolwala Learning, Software Development India, Sumatra Sales Projects" />
+    <meta name="title" content="Sumatra Sales Pvt. Ltd. | Leading Digital Innovation in Healthcare & Education" />
+    <meta name="description" content="Sumatra Sales Pvt. Ltd. is a premier technology firm in India, powering the Doctorwala Medical Ecosystem and Schoolwala E-learning platform. We deliver cutting-edge software solutions, healthcare IT, and digital education tools to empower millions." />
+    <meta name="keywords" content="Sumatra Sales Pvt Ltd, Doctorwala Medical Ecosystem, Schoolwala E-learning, Healthcare IT Solutions India, WBBSE Digital Education, Madhyamik Preparation App, Digital Health Records India, Software Development Howrah, EdTech Startups India" />
     <meta name="author" content="Sumatra Sales Pvt. Ltd." />
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="IN-WB" />
+    <meta name="geo.placename" content="Howrah" />
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="7 days" />
     <meta name="theme-color" content="#ffffff" />
@@ -33,8 +37,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:title" content="Sumatra Sales Pvt. Ltd. | Doctorwala & Schoolwala" />
-    <meta property="og:description" content="Empowering Healthcare with Doctorwala and Education with Schoolwala. Leading IT solutions provider in India." />
+    <meta property="og:title" content="Sumatra Sales Pvt. Ltd. | Innovation in Healthcare & Education" />
+    <meta property="og:description" content="Explore Doctorwala & Schoolwala - Our flagship platforms redefining medical access and digital learning in India." />
     <meta property="og:image" content="{{ asset('sumatra2.png') }}" />
     <meta property="og:site_name" content="Sumatra Sales" />
     <meta property="og:locale" content="en_US" />
@@ -42,14 +46,39 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="{{ url()->current() }}" />
-    <meta property="twitter:title" content="Sumatra Sales Pvt. Ltd. | Doctorwala & Schoolwala" />
-    <meta property="twitter:description" content="Empowering Healthcare with Doctorwala and Education with Schoolwala. Leading IT solutions provider in India." />
+    <meta property="twitter:title" content="Sumatra Sales Pvt. Ltd. | Digital Revolution in India" />
+    <meta property="twitter:description" content="Empowering millions through Doctorwala and Schoolwala. Leading the charge in Indian Healthcare IT and EdTech." />
     <meta property="twitter:image" content="{{ asset('sumatra2.png') }}" />
     <meta name="twitter:site" content="@SumatraSales" />
     <meta name="twitter:creator" content="@SumatraSales" />
 
-    <!-- Canonical URL -->
+    <!-- Canonical & Favicon -->
     <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="icon" type="image/png" href="{{ asset('sumatra2.png') }}" />
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sumatra Sales Private Limited",
+      "url": "{{ url('/') }}",
+      "logo": "{{ asset('sumatra2.png') }}",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+916292237205",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": "English, Bengali, Hindi"
+      },
+      "sameAs": [
+        "https://www.facebook.com/SumatraSales",
+        "https://twitter.com/SumatraSales",
+        "https://www.linkedin.com/company/sumatra-sales"
+      ],
+      "description": "Sumatra Sales Pvt. Ltd. is a leading digital innovation company in India, specializing in healthcare and education technology through platforms like Doctorwala and Schoolwala."
+    }
+    </script>
 
 </head>
 
@@ -279,7 +308,7 @@
                     <section class="main-section mt-4">
                         <div class="shadow border p-4 rounded-3 bg-light">
                             <div class="inner-items-center mb-4">
-                                <h2 class="fw-bold service-title-text fs-3 col-12 m-0">Sumatra Sales Flagship Projects</h2>
+                                <h2 class="fw-bold service-title-text fs-3 col-12 m-0 text-uppercase tracking-wider">Our Leading Digital Ecosystems</h2>
                             </div>
 
                             <div class="card-container2 gap-4">
@@ -388,10 +417,10 @@
 
                             <div class="card-content mt-2" style="padding: 16px;">
                                 @foreach($videos as $video)
-                                <h1 class="fw-bold fs-4 text-start m-0 video-title">
-                                    Hey, I'm <span class="clr-bl">Graphicode India</span>
+                                <h1 class="fw-bold fs-3 text-start m-0 video-title mb-2">
+                                    Revolutionizing <span class="clr-bl">India's Digital Landscape</span>
                                 </h1>
-                                <p class="fs-6 m-0 video-desc" style="text-align: justify">
+                                <p class="fs-6 m-0 video-desc" style="text-align: justify; opacity: 0.85;">
                                     {{ $video->desc }}
                                 </p>
                                 @endforeach

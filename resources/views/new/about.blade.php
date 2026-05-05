@@ -4,12 +4,43 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Sumatra Sales Private Limited</title>
+    <title>About Us | Sumatra Sales Private Limited - Driving Digital Excellence</title>
 
     <!-- Primary Meta Tags -->
-    <meta name="description" content="Sumatra Sales Pvt. Ltd. is a leading technology and service provider in India, dedicated to revolutionizing the healthcare and education sectors through our platforms Doctorwala and Schoolwala." />
-    <meta name="keywords" content="Sumatra Sales Pvt Ltd, About Sumatra Sales, Doctorwala, Schoolwala, Technology Company India, Healthcare Innovation, Digital Education" />
+    <meta name="title" content="About Sumatra Sales | Mission, Vision & Innovation in India" />
+    <meta name="description" content="Discover the story of Sumatra Sales Private Limited. Learn about our mission to revolutionize healthcare and education in India through Doctorwala and Schoolwala platforms." />
+    <meta name="keywords" content="About Sumatra Sales, Technology Company Howrah, Digital Innovation India, Healthcare EdTech Founder, Sumatra Sales Mission, Doctorwala Vision, Schoolwala Goals" />
     <meta name="author" content="Sumatra Sales Pvt. Ltd." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title" content="About Sumatra Sales | Building Tomorrow's Digital Ecosystem" />
+    <meta property="og:description" content="Meet the team and the vision behind India's most promising healthcare and education platforms." />
+    <meta property="og:image" content="{{ asset('sumatra2.png') }}" />
+
+    <!-- Canonical & Icons -->
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="icon" type="image/png" href="{{ asset('sumatra2.png') }}" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Sumatra Sales Private Limited",
+        "description": "Sumatra Sales is a pioneering technology company focusing on Healthcare and Education through its platforms Doctorwala and Schoolwala.",
+        "foundingDate": "2024",
+        "location": {
+          "@type": "Place",
+          "address": "Howrah, West Bengal, India"
+        }
+      }
+    }
+    </script>
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />

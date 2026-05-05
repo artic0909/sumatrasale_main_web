@@ -4,15 +4,51 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doctorwala Medical Ecosystem | Sumatra Sales Pvt. Ltd.</title>
+    <title>Doctorwala Medical Ecosystem | Unified Healthcare Solutions in India</title>
 
     <!-- Primary Meta Tags -->
-    <meta name="description" content="Doctorwala is India's first comprehensive Medical Ecosystem, providing a unified platform for doctors, clinics, and healthcare providers with innovative digital solutions tailored for the Indian healthcare industry." />
-    <meta name="keywords" content="Sumatra Sales Pvt Ltd, Doctorwala Medical Ecosystem, Schoolwala E-learning Platform, Healthcare IT India, Digital Education Platform, Doctorwala App, Schoolwala Learning, Software Development India, Sumatra Sales Projects" />
+    <meta name="title" content="Doctorwala Medical Ecosystem | Find Doctors, Clinics & Manage Health Records" />
+    <meta name="description" content="Doctorwala is India's premier Medical Ecosystem. Connect with verified doctors, book clinic appointments, find nearby medical shops, and manage your secure digital health records in one unified platform." />
+    <meta name="keywords" content="Doctorwala, Medical Ecosystem India, Find Doctors Online, Online Doctor Appointment, Digital Health Records, Personal Medical ID, Nearby Clinics Howrah, Healthcare Management System, Sumatra Sales Healthcare" />
     <meta name="author" content="Sumatra Sales Pvt. Ltd." />
     <meta name="robots" content="index, follow" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title" content="Doctorwala | Your Family's Digital Healthcare Partner" />
+    <meta property="og:description" content="Book appointments, store prescriptions, and access verified medical services across India with Doctorwala." />
+    <meta property="og:image" content="{{ asset('img/products/doctorwala.png') }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ url()->current() }}" />
+    <meta property="twitter:title" content="Doctorwala - India's First Comprehensive Medical Ecosystem" />
+    <meta property="twitter:description" content="Revolutionizing healthcare access with digital prescriptions and verified doctor networks." />
+    <meta property="twitter:image" content="{{ asset('img/products/doctorwala.png') }}" />
+
+    <!-- Canonical & Icons -->
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="icon" type="image/png" href="{{ asset('img/products/doctorwala.png') }}" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Doctorwala",
+      "alternateName": "Doctorwala Medical Ecosystem",
+      "url": "{{ url('/doctorwala') }}",
+      "image": "{{ asset('img/products/doctorwala.png') }}",
+      "description": "A comprehensive medical ecosystem connecting patients with doctors, clinics, and pharmacies across India.",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web, Android",
+      "author": {
+        "@type": "Organization",
+        "name": "Sumatra Sales Private Limited"
+      }
+    }
+    </script>
 
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
@@ -27,27 +63,6 @@
 
 
     <!-- <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> -->
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:title" content="Doctorwala Medical Ecosystem | Sumatra Sales Pvt. Ltd." />
-    <meta property="og:description" content="Doctorwala is India's first comprehensive Medical Ecosystem, providing a unified platform for doctors, clinics, and healthcare providers with innovative digital solutions tailored for the Indian healthcare industry." />
-    <meta property="og:image" content="{{ asset('sumatra2.png') }}" />
-    <meta property="og:site_name" content="Sumatra Sales" />
-    <meta property="og:locale" content="en_US" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="{{ url()->current() }}" />
-    <meta property="twitter:title" content="Doctorwala Medical Ecosystem | Sumatra Sales Pvt. Ltd." />
-    <meta property="twitter:description" content="Doctorwala is India's first comprehensive Medical Ecosystem, providing a unified platform for doctors, clinics, and healthcare providers with innovative digital solutions tailored for the Indian healthcare industry." />
-    <meta property="twitter:image" content="{{ asset('sumatra2.png') }}" />
-    <meta name="twitter:site" content="@SumatraSales" />
-    <meta name="twitter:creator" content="@SumatraSales" />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ url()->current() }}" />
 
 </head>
 

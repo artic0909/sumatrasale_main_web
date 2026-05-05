@@ -4,28 +4,53 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us | Sumatra Sales Private Limited</title>
+    <title>Contact Us | Sumatra Sales Private Limited - Support & Inquiries</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Get in touch with Sumatra Sales Private Limited for creative business solutions, software services, and expert support. Contact us via phone, email, or WhatsApp." />
-    <meta name="keywords" content="Sumatra Sales, Contact, Business Solutions, Software Services, Marketing, WhatsApp, Email, Phone" />
+    <meta name="title" content="Contact Sumatra Sales | Get Expert Tech & Business Support" />
+    <meta name="description" content="Have a question? Reach out to Sumatra Sales Private Limited. Contact us for Doctorwala, Schoolwala, or custom software inquiries. Our team is ready to assist you via email, phone, or WhatsApp." />
+    <meta name="keywords" content="Sumatra Sales Contact, Doctorwala Support, Schoolwala Inquiries, Technical Support India, Software Service Contact, Business Collaboration Howrah" />
     <meta name="author" content="Sumatra Sales Private Limited" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Contact Us | Sumatra Sales Private Limited" />
-    <meta property="og:description" content="Reach out to Sumatra Sales Private Limited for business solutions, software services, and creative support." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:image" content="{{ asset('./sumatra2.png') }}" />
+    <meta property="og:title" content="Contact Us | Sumatra Sales Private Limited" />
+    <meta property="og:description" content="Reach out to Sumatra Sales Private Limited for business solutions, software services, and creative support." />
+    <meta property="og:image" content="{{ asset('sumatra2.png') }}" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Contact Us | Sumatra Sales Private Limited" />
     <meta name="twitter:description" content="Get in touch with Sumatra Sales Private Limited for creative business solutions and support." />
-    <meta name="twitter:image" content="{{ asset('./sumatra2.png') }}" />
+    <meta name="twitter:image" content="{{ asset('sumatra2.png') }}" />
 
-    <!-- Canonical URL -->
+    <!-- Canonical & Icons -->
     <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="icon" type="image/png" href="{{ asset('sumatra2.png') }}" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Sumatra Sales Private Limited",
+        "telephone": "+916292237205",
+        "email": "sumatra.sales2424@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Howrah",
+          "addressRegion": "West Bengal",
+          "postalCode": "711302",
+          "addressCountry": "IN"
+        }
+      }
+    }
+    </script>
+
     <link rel="stylesheet" href="{{asset('./css/common.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/index.css')}}" />
     <link rel="stylesheet" href="{{asset('./css/fixed.css')}}" />
