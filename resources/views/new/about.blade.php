@@ -33,7 +33,7 @@
         "@type": "Organization",
         "name": "Sumatra Sales Private Limited",
         "description": "Sumatra Sales is a pioneering technology company specializing in Healthcare (Doctorwala), Education (Schoolwala), and Software Solutions (Graphicode India).",
-        "foundingDate": "2024",
+        "foundingDate": "2020",
         "location": {
           "@type": "Place",
           "address": "Howrah, West Bengal, India"
@@ -209,7 +209,7 @@
                 <section class="about-hero rounded-4 shadow-sm border bg-white mb-5 mt-4 text-center text-lg-start px-4 px-lg-5">
                     <div class="row align-items-center">
                         <div class="col-lg-7">
-                            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3 fw-bold">Established 2024</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3 fw-bold">Established 2020</span>
                             <h1 class="fw-bold mb-4" style="font-size: 4rem; line-height: 1; color: var(--primary-blue);">Building Tomorrow's <br><span class="clr-org">Digital Ecosystem</span></h1>
                             <p class="fs-5 text-secondary mb-5" style="text-align: justify; line-height: 1.8;">
                                 Sumatra Sales Private Limited is a pioneering technology-driven company committed to solving real-world problems. We specialize in creating high-impact digital platforms that bridge the gap between essential services and the common man. From revolutionary healthcare management with Doctorwala to accessible quality education with Schoolwala, we are redefining how India interacts with technology.
