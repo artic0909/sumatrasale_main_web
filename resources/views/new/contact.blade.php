@@ -104,40 +104,27 @@
                         <div class="collapse navbar-collapse" id="navbarDefault">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 align-items-center">
                                 <li class="nav-item">
+                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/"><span>Home</span></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/about"><span>About</span></a>
+                                </li>
+
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold inner-items-center" aria-current="page" href="/blogs"><span>Blogs</span></a>
+                                </li>
+
+
+                                <li class="nav-item">
                                     <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page"
-                                        href="/"><img class="nav-img" src="{{asset('./icon/home.png')}}" width="19"
-                                            alt="" />&nbsp;<span>Home</span></a>
+                                        href="/doctorwala"><span>Doctorwala</span>&nbsp;<img class="nav-img" src="{{asset('./icon/doctor.png')}}" width="19" alt="Doctorwala Icon" /></a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="/about"><img class="nav-img" src="{{asset('./icon/about.png')}}" width="19"
-                                            alt="" />&nbsp;<span>About</span></a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="/services"><img class="nav-img" src="{{asset('./icon/services.png')}}" width="22"
-                                            alt="" />&nbsp;<span>Services</span></a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="/projects"><img class="nav-img" src="{{asset('./icon/projects.png')}}" width="18"
-                                            alt="" />&nbsp;<span>Projects</span></a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold inner-items-center" aria-current="page"
-                                        href="/blogs"><img class="nav-img" src="{{asset('./icon/blogs.png')}}" width="20"
-                                            alt="" />&nbsp;<span>Blogs</span></a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold hide inner-items-center" aria-current="page"
-                                        id="active-nav" href="/contact"><img class="nav-img"
-                                            src="{{asset('./icon/contactus.png')}}" width="23"
-                                            alt="" />&nbsp;<span>Contact</span></a>
+                                    <a class="nav-link fw-bold inner-items-center text-secondary" aria-current="page"
+                                        href="/schoolwala"><span>Schoolwala</span>&nbsp;<img class="nav-img" src="{{asset('./icon/graduation.png')}}" width="19" alt="Schoolwala Icon" /></a>
                                 </li>
 
                                 <li class="nav-item btn-org">
