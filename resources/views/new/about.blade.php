@@ -213,6 +213,68 @@
                     <i class="bi bi-cpu float-icon" style="top: 30%; right: 20%; font-size: 5rem; animation-delay: 6s;"></i>
                 </div>
 
+
+                <!-- Our Platforms -->
+                <div class="mb-5 mt-4">
+                    <h2 class="fw-bold text-center mb-5 fs-1">Our Leading <span class="clr-org">Platforms</span></h2>
+                    <div class="row g-4">
+                        <!-- Doctorwala -->
+                        <div class="col-12">
+                            <div class="platform-card doctorwala shadow-sm mb-4">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-2 text-center mb-4 mb-lg-0">
+                                        <img src="{{asset('img/products/doctorwala.png')}}" alt="Doctorwala" width="150" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <h3 class="fw-bold clr-bl mb-3">Doctorwala Medical Ecosystem</h3>
+                                        <p class="text-secondary fs-5 mb-0">A comprehensive healthcare platform connecting patients with doctors, diagnostic centers, and pharmacies. Doctorwala simplifies the medical journey by offering digital prescriptions, appointment booking, and health record management all in one place.</p>
+                                    </div>
+                                    <div class="col-lg-3 text-lg-end mt-4 mt-lg-0">
+                                        <a href="/doctorwala" class="btn btn-outline-primary fw-bold px-4 py-2 rounded-pill">Explore Platform <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Graphicode India -->
+                        <div class="col-12">
+                            <div class="platform-card graphicode shadow-sm">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-2 text-center mb-4 mb-lg-0">
+                                        <img src="{{asset('img/products/gci.png')}}" alt="Graphicode India" width="150" class="img-fluid rounded-3 shadow-sm p-3 bg-white">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <h3 class="fw-bold mb-3" style="color: #6f42c1;">Graphicode India</h3>
+                                        <p class="text-secondary fs-5 mb-0">Our dedicated Software Solution wing. We specialize in making all kinds of modern websites, digital marketing services, mobile apps, and full-scale tech integrations to power businesses in the digital age.</p>
+                                    </div>
+                                    <div class="col-lg-3 text-lg-end mt-4 mt-lg-0">
+                                        <a href="https://graphicodeindia.com/" class="btn btn-outline-dark fw-bold px-4 py-2 rounded-pill" style="border-color: #6f42c1; color: #6f42c1;">Learn More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Schoolwala -->
+                        <div class="col-12">
+                            <div class="platform-card schoolwala shadow-sm">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-2 text-center mb-4 mb-lg-0">
+                                        <img src="{{asset('img/products/Schoolwala.jpg')}}" alt="Schoolwala" width="150" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <h3 class="fw-bold clr-org mb-3">Schoolwala E-learning</h3>
+                                        <p class="text-secondary fs-5 mb-0">Dedicated to the WBBSE curriculum, Schoolwala provides Bengali medium students with high-quality animated lessons, suggestion papers, and interactive learning tools. We are committed to making education engaging and accessible for every student in Bengal.</p>
+                                    </div>
+                                    <div class="col-lg-3 text-lg-end mt-4 mt-lg-0">
+                                        <a href="/schoolwala" class="btn btn-outline-warning fw-bold px-4 py-2 rounded-pill">Explore Platform <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <!-- Hero Section -->
                 <section class="about-hero rounded-4 shadow-sm border bg-white mb-5 mt-4 text-center text-lg-start px-4 px-lg-5">
                     <div class="row align-items-center">
@@ -265,67 +327,11 @@
                     </div>
                 </div>
 
-                <!-- Our Platforms -->
-                <div class="mb-5">
-                    <h2 class="fw-bold text-center mb-5 fs-1">Our Leading <span class="clr-org">Platforms</span></h2>
-                    <div class="row g-4">
-                        <!-- Doctorwala -->
-                        <div class="col-12">
-                            <div class="platform-card doctorwala shadow-sm mb-4">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-2 text-center mb-4 mb-lg-0">
-                                        <img src="{{asset('img/products/doctorwala.png')}}" alt="Doctorwala" width="150" class="img-fluid rounded-3 shadow-sm">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <h3 class="fw-bold clr-bl mb-3">Doctorwala Medical Ecosystem</h3>
-                                        <p class="text-secondary fs-5 mb-0">A comprehensive healthcare platform connecting patients with doctors, diagnostic centers, and pharmacies. Doctorwala simplifies the medical journey by offering digital prescriptions, appointment booking, and health record management all in one place.</p>
-                                    </div>
-                                    <div class="col-lg-3 text-lg-end mt-4 mt-lg-0">
-                                        <a href="/doctorwala" class="btn btn-outline-primary fw-bold px-4 py-2 rounded-pill">Explore Platform <i class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Schoolwala -->
-                        <div class="col-12">
-                            <div class="platform-card schoolwala shadow-sm">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-2 text-center mb-4 mb-lg-0">
-                                        <img src="{{asset('img/products/Schoolwala.jpg')}}" alt="Schoolwala" width="150" class="img-fluid rounded-3 shadow-sm">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <h3 class="fw-bold clr-org mb-3">Schoolwala E-learning</h3>
-                                        <p class="text-secondary fs-5 mb-0">Dedicated to the WBBSE curriculum, Schoolwala provides Bengali medium students with high-quality animated lessons, suggestion papers, and interactive learning tools. We are committed to making education engaging and accessible for every student in Bengal.</p>
-                                    </div>
-                                    <div class="col-lg-3 text-lg-end mt-4 mt-lg-0">
-                                        <a href="/schoolwala" class="btn btn-outline-warning fw-bold px-4 py-2 rounded-pill">Explore Platform <i class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Graphicode India -->
-                        <div class="col-12">
-                            <div class="platform-card graphicode shadow-sm">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-2 text-center mb-4 mb-lg-0">
-                                        <img src="{{asset('img/products/gci.png')}}" alt="Graphicode India" width="150" class="img-fluid rounded-3 shadow-sm p-3 bg-white">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <h3 class="fw-bold mb-3" style="color: #6f42c1;">Graphicode India</h3>
-                                        <p class="text-secondary fs-5 mb-0">Our dedicated Software Solution wing. We specialize in making all kinds of modern websites, digital marketing services, mobile apps, and full-scale tech integrations to power businesses in the digital age.</p>
-                                    </div>
-                                    <div class="col-lg-3 text-lg-end mt-4 mt-lg-0">
-                                        <a href="https://graphicodeindia.com/" class="btn btn-outline-dark fw-bold px-4 py-2 rounded-pill" style="border-color: #6f42c1; color: #6f42c1;">Learn More <i class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
                 <!-- Corporate Info -->
                 <div class="bg-white p-5 rounded-4 border shadow-sm mb-5 text-center">
-                    <h2 class="fw-bold mb-4">Corporate Office</h2>
+                    <h2 class="fw-bold mb-4">Contact With Us</h2>
                     <div class="row g-4 justify-content-center">
                         <div class="col-md-4">
                             <div class="d-flex flex-column align-items-center">

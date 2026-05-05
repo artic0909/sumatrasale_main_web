@@ -445,51 +445,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Schoolwala Project -->
-                                <div class="product-card shadow-sm border p-4 rounded-4 bg-white d-flex flex-column h-100" onclick="window.open('https://schoolwala.info/', '_blank')">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <div class="bg-white p-2 rounded-3 shadow-sm border border-light-subtle logo-3d" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
-                                            <img src="{{asset('img/products/Schoolwala.jpg')}}" alt="Schoolwala Logo" width="45" class="rounded-1">
-                                        </div>
-                                        <div class="ms-3">
-                                            <h3 class="fw-bold fs-4 mb-0">Schoolwala</h3>
-                                            <span class="badge bg-success-subtle text-success border border-success-subtle">Education for all</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex-grow-1">
-                                        <div class="description-text mb-3" style="text-align: justify; line-height: 1.5; font-size: 0.9rem;">
-                                            <p class="mb-2">Empowering the next generation with accessible and quality education resources for everyone, everywhere. Bridging the gap between knowledge and accessibility.</p>
-                                            <p class="mb-2">Our platform provides a unique path for every student, combining animated <strong>lessons</strong> with interactive quizzes that make learning fun and effective.</p>
-                                            
-                                            <div class="mission-box p-2 bg-light border-start border-success border-4 rounded-1 mb-2">
-                                                <small class="fw-bold text-success">OUR MISSION:</small><br>
-                                                <small class="fst-italic text-dark">To bridge the gap between quality education and accessibility for every student.</small>
-                                            </div>
-                                            <p class="mb-2 fw-bold text-success text-center">Learn. Grow. Succeed. — Your Education, Simplified.</p>
-                                        </div>
-
-                                        <div class="features-grid mb-3">
-                                            <div class="row g-2">
-                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/blogs.png')}}" width="18" class="me-2" alt=""> Learning Roadmap</div>
-                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/video-edition.png')}}" width="18" class="me-2" alt=""> Animated Lessons</div>
-                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/about.png')}}" width="18" class="me-2" alt=""> Practical Activities</div>
-                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/technical-support.png')}}" width="18" class="me-2" alt=""> Mentor Support</div>
-                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/graphic-designer.png')}}" width="18" class="me-2" alt=""> Interactive Classes</div>
-                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/graduation.png')}}" width="18" class="me-2" alt=""> School Curriculum</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="ss-container rounded-3 border mb-3">
-                                            <img src="{{asset('img/products/scss.png')}}" alt="Schoolwala Screenshot" class="w-100 hover-img">
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-auto">
-                                        <a href="https://schoolwala.info/" target="_blank" class="btn btn-success w-100 py-2 fw-bold text-white rounded-3 shadow-sm" style="background: linear-gradient(45deg, #198754, #0f5132); border: none;">Visit Schoolwala Website</a>
-                                    </div>
-                                </div>
-
                                 <!-- Graphicode India -->
                                 <div class="product-card shadow-sm border p-4 rounded-4 bg-white d-flex flex-column h-100" onclick="window.open('https://graphicodeindia.com/', '_blank')">
                                     <div class="d-flex align-items-center mb-3">
@@ -535,6 +490,53 @@
                                         <a href="https://graphicodeindia.com/" target="_blank" class="btn w-100 py-2 fw-bold text-white rounded-3 shadow-sm" style="background: linear-gradient(45deg, #6f42c1, #4b2c85); border: none;">Visit Graphicode India</a>
                                     </div>
                                 </div>
+
+                                <!-- Schoolwala Project -->
+                                <div class="product-card shadow-sm border p-4 rounded-4 bg-white d-flex flex-column h-100" onclick="window.open('https://schoolwala.info/', '_blank')">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="bg-white p-2 rounded-3 shadow-sm border border-light-subtle logo-3d" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                            <img src="{{asset('img/products/Schoolwala.jpg')}}" alt="Schoolwala Logo" width="45" class="rounded-1">
+                                        </div>
+                                        <div class="ms-3">
+                                            <h3 class="fw-bold fs-4 mb-0">Schoolwala</h3>
+                                            <span class="badge bg-success-subtle text-success border border-success-subtle">Education for all</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-grow-1">
+                                        <div class="description-text mb-3" style="text-align: justify; line-height: 1.5; font-size: 0.9rem;">
+                                            <p class="mb-2">Empowering the next generation with accessible and quality education resources for everyone, everywhere. Bridging the gap between knowledge and accessibility.</p>
+                                            <p class="mb-2">Our platform provides a unique path for every student, combining animated <strong>lessons</strong> with interactive quizzes that make learning fun and effective.</p>
+                                            
+                                            <div class="mission-box p-2 bg-light border-start border-success border-4 rounded-1 mb-2">
+                                                <small class="fw-bold text-success">OUR MISSION:</small><br>
+                                                <small class="fst-italic text-dark">To bridge the gap between quality education and accessibility for every student.</small>
+                                            </div>
+                                            <p class="mb-2 fw-bold text-success text-center">Learn. Grow. Succeed. — Your Education, Simplified.</p>
+                                        </div>
+
+                                        <div class="features-grid mb-3">
+                                            <div class="row g-2">
+                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/blogs.png')}}" width="18" class="me-2" alt=""> Learning Roadmap</div>
+                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/video-edition.png')}}" width="18" class="me-2" alt=""> Animated Lessons</div>
+                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/about.png')}}" width="18" class="me-2" alt=""> Practical Activities</div>
+                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/technical-support.png')}}" width="18" class="me-2" alt=""> Mentor Support</div>
+                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/graphic-designer.png')}}" width="18" class="me-2" alt=""> Interactive Classes</div>
+                                                <div class="col-6 small text-dark fw-semibold d-flex align-items-center"><img src="{{asset('./icon/graduation.png')}}" width="18" class="me-2" alt=""> School Curriculum</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ss-container rounded-3 border mb-3">
+                                            <img src="{{asset('img/products/scss.png')}}" alt="Schoolwala Screenshot" class="w-100 hover-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-auto">
+                                        <a href="https://schoolwala.info/" target="_blank" class="btn btn-success w-100 py-2 fw-bold text-white rounded-3 shadow-sm" style="background: linear-gradient(45deg, #198754, #0f5132); border: none;">Visit Schoolwala Website</a>
+                                    </div>
+                                </div>
+
+                                
                             </div>
                         </div>
                     </section>
