@@ -5,6 +5,10 @@
         </h2>
     </x-slot>
 
+    <!-- Summernote CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -86,7 +90,7 @@
 
                         <div class="form-group mb-3">
                             <label for="desc" class="form-label fw-bold mb-2">Blog Description<span class="text-danger">*</span></label>
-                            <textarea name="desc" id="desc" class="form-control" rows="6" placeholder="Enter Blog Description" required></textarea>
+                            <textarea name="desc" id="desc_add" class="form-control summernote" rows="6" placeholder="Enter Blog Description"></textarea>
                         </div>
 
 
@@ -136,7 +140,7 @@
 
                         <div class="form-group mb-3">
                             <label for="desc" class="form-label fw-bold mb-2">Blog Description<span class="text-danger">*</span></label>
-                            <textarea name="desc" id="desc" class="form-control" rows="6">{{ $blog->desc }}</textarea>
+                            <textarea name="desc" id="desc_edit{{$blog->id}}" class="form-control summernote" rows="6">{{ $blog->desc }}</textarea>
                         </div>
 
 
@@ -206,4 +210,24 @@
 
 
 
+    <!-- Summernote JS -->
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.summernote').summernote({
+                placeholder: 'Write your blog content here...',
+                tabsize: 2,
+                height: 300,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']]
+                ]
+            });
+        });
+    </script>
 </x-app-layout>

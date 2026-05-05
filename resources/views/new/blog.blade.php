@@ -217,7 +217,7 @@
                             <div class="blog-body">
                                 <h3 class="blog-title">{{ $blog->title }}</h3>
                                 <p class="blog-text">
-                                    {{ strip_tags($blog->desc) }}
+                                    {{ Str::limit(strip_tags($blog->desc), 150) }}
                                 </p>
                                 <div class="blog-footer">
                                     <div class="d-flex align-items-center gap-2">

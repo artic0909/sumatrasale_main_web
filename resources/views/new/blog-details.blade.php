@@ -55,6 +55,13 @@
         .blog-content-full p {
             margin-bottom: 1.8rem;
         }
+        .blog-content-full img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
         .blog-detail-image {
             border-radius: 20px;
             overflow: hidden;
