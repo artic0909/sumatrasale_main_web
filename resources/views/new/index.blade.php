@@ -645,7 +645,7 @@
                                 @endforeach
                             </div>
                         </div>
-
+<!-- 
                         <div class="shadow border p-3 mt-4">
                             <div class="mb-2 d-flex flex-column together-text">
                                 <span class="fw-bold text-start fs-4 service-title-text">Let's Get Success Together</span>
@@ -653,7 +653,6 @@
                             </div>
 
                             <div class="p-2">
-                                <!-- card 1 -->
                                 <div class="p-3" style="background: #cecdd891; border-radius: 15px">
                                     <div style="border-radius: 10px"
                                         class="numbers-container bg-white p-3 d-flex flex-column align-items-center">
@@ -665,7 +664,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </section>
 
                     <section class="main-section mt-4">
@@ -706,6 +705,30 @@
                     </section>
                 </div>
                 <!-- =============================FAQ Section + Join + Recomendation End======================================================= -->
+
+                    <section class="main-section mt-4">
+                        <div class="shadow border p-3 mt-4">
+                            <div class="mb-2 d-flex together-text">
+                                <span class="fw-bold text-start fs-4 service-title-text">Let's Get Success Together</span>
+                                <span class="fw-bold fs-4 text-start clr-bl service-title-text">&nbsp;Join Us <span class="clr-org">Now</span></span>
+                            </div>
+
+                            <div class="p-2">
+                                <!-- card 1 -->
+                                <div class="p-3" style="background: #cecdd891; border-radius: 15px">
+                                    <div style="border-radius: 10px"
+                                        class="numbers-container bg-white p-3 d-flex flex-column align-items-center">
+                                        @foreach($marquees as $marquee)
+                                        <marquee behavior="" direction="" class="fs-5 fw-semibold service-title-text clr-bl" style="opacity: 0.9">
+                                            {{$marquee->marquee_text}}
+                                        </marquee>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
 
                 <!-- =============================Footer Section Start====================================================================== -->
                 <footer class="row mt-5 mb-2">
